@@ -458,7 +458,7 @@
 %
 \RequirePackage{ltxcmds}%
 \def\authororcid#1{%
-\ltx@ifpackageloaded{hyperref}{\href{https://orcid.org/#1}{\includegraphics{orcid_logo}}}{{\includegraphics{orcid_logo}}}%
+\ltx@ifpackageloaded{hyperref}{\href{https://orcid.org/#1}{}}{{}}%
 }
 \newcommand{\orcid}[1]{\protect\g@addto@macro\artauthors{%
 \authororcid{#1}%
@@ -744,7 +744,7 @@
 \def\ps@titlepage{%
      \def\@oddhead{{\hbox to \textwidth{%
       \vbox to 0pt{\vskip-5pt\rlap{\hbox to
-      \textwidth{\hfill\smash{\includegraphics[height=18pt]{Flowlogo}}\quad\includegraphics[scale=.75]{CUP_Logo}\hspace*{-1pt}}}}%
+      \textwidth{\hfill\smash{}\quad\hspace*{-1pt}}}}%
       \vbox to 0pt{\vskip-7pt\rlap{\parbox{\textwidth}{\opheaderfont\begin{tabular*}{\textwidth}[b]{@{\extracolsep{\fill}}@{}l@{}}%
       \@opjournalheader%
       \end{tabular*}}}}%
