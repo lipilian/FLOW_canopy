@@ -1,0 +1,943 @@
+\documentclass[lineno,authoryear]{FLO_v1}%
+
+%%%% Packages
+\usepackage{graphicx}
+\usepackage{upgreek}
+\usepackage{multicol,multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage[figuresright]{rotating}
+\usepackage{appendix}
+\usepackage[authoryear]{natbib}
+\usepackage{ifpdf}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+%\renewcommand\theequation{\arabic{equation}}
+%\setcounter{equation}{0}
+
+\usepackage[colorlinks,allcolors=blue]{hyperref}
+\definecolor{jourcolor}{cmyk}{1,0.57,0.01,0.38}
+\hypersetup{
+    colorlinks,%
+    citecolor=jourcolor,%
+    filecolor=jourcolor,%
+    linkcolor=jourcolor,%
+    urlcolor=jourcolor
+}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+%\numberwithin{equation}{section}
+
+\articletype{RESEARCH ARTICLE}
+
+\DOI{10.1017/flo.2021.1}
+
+\Year{2021}
+
+\Vol{1}
+
+\Price{}
+
+%\firstpage{1}
+
+\art-id{FLO2000049}
+
+\citearticle{Bharadwaj, R., \& Santiago, J. G.}
+
+%\Enumber{E1}%Please cbange the value of Enumber here
+
+\begin{document}
+
+\title[Shockwave and rarefaction phenomena in field amplified sample stacking of sample ions]{Shockwave and rarefaction phenomena in field amplified sample stacking
+of sample ions}
+
+\author[Rajiv Bharadwaj and Juan G. Santiago]{Rajiv Bharadwaj$^{1}$ and Juan G.
+Santiago$^{2\ast}${{\href{https://orcid.org/0000-0001-8652-5411}{\includegraphics{orcid_logo}}}}}
+
+%\author[2]{Juan G. Santiago}
+
+%\authormark{Rajiv Bharadwaj and Juan G. Santiago}
+
+\address[1]{Chemical Engineering Department, Stanford University, Stanford, CA 94305, USA}
+\address[2]{Mechanical Engineering Department, Stanford University, Stanford, CA 94305, USA}
+
+\corres{*}{Corresponding author. E-mail:
+\emaillink{juan.santiago@stanford.edu}}
+
+\keywords{Electrokinetic systems; Electrophoresis}
+
+\date{\textbf{Received:} XX 2020; \textbf{Revised:} XX XX 2020; \textbf{Accepted:} XX XX 2020}
+
+\abstract{Field amplified sample stacking (FASS) is
+frequently used to improve detection sensitivity of on-chip
+electrophoretic assays. FASS involves low conductivity
+sample buffer and high conductivity running buffer. The
+typical concentration enhancement is equal to $\gamma$, the
+background-to-sample buffer conductivity ratio. However,
+deviations from ideal behavior occur frequently in
+nonlinear regimes of electromigration including asymmetric
+peak shapes and stacking effects in isoconductive ($\gamma
+=1$) buffers. We present an analytical model for the case
+where the sample concentration is on the order of
+background ion concentrations. We also present on-chip FASS
+experiments to describe temporal and spatial evolution of
+zone boundaries in isoconductive buffer system as well as
+heterogeneous conductivity buffer systems. The model
+predicts two regimes of concentration enhancement. The
+first regime is characterized by a rarefaction wave for
+sample ion distribution with a final concentration
+enhancement greater than $\gamma$. In the second regime,
+the sample ion concentration wave steepens toward a shock
+wave, and maximum concentration enhancement is less than
+$\gamma$. We used epifluorescence imaging in a staggered-T
+glass microchip (under suppressed electroosmotic flow
+conditions) to quantify the dynamics of electromigration
+shock and rarefaction waves in microchannels. There is good
+quantitative agreement between the predicted and measured
+maximum concentration enhancement.}
+
+\maketitle
+
+\begin{boxtext}
+
+\textbf{\mathversion{bold}Impact Statement}
+
+Electrokinetic microfluidic systems have been leveraged for a wide variety
+of applications including sample preparation, species separation, and
+detection of chemical and biochemical species. One key functional aspect of
+such devices is field amplified sample stacking (FASS) which is used to
+preconcentrate species to improve the limits of detection. We demonstrate
+how electrophoretically transported species can exhibit shockwave and
+rarefaction wave phenomena. These result from a non-linear coupling between
+non-uniform concentration gradients and the direction of ion migration. In
+particular, we find ionic migration in the direction of decreasing species
+velocity results in self-steepening of ion gradients into a shock wave.
+These waves have application to efficient preconcentration of species to
+improve limit of detection and to species transport with minimal dispersion.
+Conversely, ion migration in the direction of increasing species velocity
+results in rarefaction waves. Importantly, experimental observations of such
+rarefaction waves appear qualitatively as a rapid diffusion, but in fact the
+dispersion rate of these waves is dominated by the non-uniform species
+velocity. The analyses identify key controlling parameters governing the
+dynamics of these waves and offers a method to enhance and suppress them.
+\end{boxtext}
+
+\section{Introduction}
+
+Sample stacking techniques enable high sensitivity
+microchip-based electrophoretic assays. Several
+electrokinetic stacking techniques, including field
+amplified sample stacking (FASS), isotachophoresis (ITP),
+micellar electrokinetic chromatography (MEKC), iso-electric
+focusing (IEF), and temperature gradient focusing (TGF),
+have been successfully applied to microchip-based systems.
+The sensitivity increase can be anywhere between 10-fold to
+a millionfold (Jacobson \& Ramsey, \hyperlink{bib12}{1995},
+Jung, Bharadwaj, \& Santiago, \hyperlink{bib13}{2006a};
+Jung, Bharadwaj, \& Santiago, \hyperlink{bib14}{2006b}).
+Comprehensive understanding of the physics of stacking
+processes is critical for optimization of sensitivity of
+lab-on-a-chip devices.
+
+One of the simplest sample stacking techniques is field
+amplified sample stacking (FASS). 1000-fold signal increase
+is possible with this method (Jung, Bharadwaj, \& Santiago,
+\hyperlink{bib13}{2003}; Kuban, Berg, Garcia, \& Karlberg,
+\hyperlink{bib16}{2001}). In FASS, an axial gradient in
+ionic conductivity (and electric field gradient) is
+achieved by preparing the sample in an electrolyte solution
+of lower concentration than the background electrolyte
+(BGE). Upon application of an axial potential difference,
+the sample region acts as a high electrical resistance zone
+in series with the rest of the channel, resulting in a
+large local electric field within the sample zone. Under
+the influence of electric field, sample ions migrate from
+the high to low drift velocity region. This leads to a
+local accumulation or ``stacking'' of sample ions near the
+conductivity interface. This stacking increases sample
+concentration and results in increased signal. The maximum
+concentration increase in FASS is proportional to $\gamma$,
+the BGE-to-sample electrolyte conductivity ratio
+(Bharadwaj, Santiago, \& Mohammadi, \hyperlink{bib1}{2005};
+Burgi \& Chien \hyperlink{bib4}{1991}).
+
+However, deviations from this ideal case are possible under
+various situations. For example, Burgi and Chien
+(\hyperlink{bib4}{1991}) point out that for sample
+concentrations greater than 10\,$\upmu$M, conductivity
+gradients and pH fields can change during FASS injection,
+resulting in complex behavior not captured by idealized
+FASS models. Another example of non-ideal FASS was recently
+provided by Liu, Foote, Jacobson, and Ramsey
+(\hyperlink{bib18}{2005})  they described sample stacking
+in a MEKC system involving sodium dodecyl sulfate (SDS)
+micelles. The buffer system in their experiments is
+characterized by initially isoconductive sample and running
+buffer. Conventional FASS theory is unable to explain any
+concentration change in isoconductive buffer system since,
+$\gamma =1$. Liu et al. qualitatively argued that the
+stacking process in isoconductive system is due to mismatch
+of various ionic transport numbers (although the detailed
+dynamics of the process were not described).
+
+Several CE researchers have developed fairly comprehensive
+mathematical models to investigate multi-ion
+electromigration phenomena such as isotachophoresis and
+isoelectric focusing (Bier, Palusinski, Mosher, \& Saville, \hyperlink{bib3}{1983}; Ermakov, Zhukov, Capelli,
+\& Righetti, \hyperlink{bib7}{1994}; Gas \&
+Kenndler, \hyperlink{bib9}{2000}; Gebaur \& Bocek,
+\hyperlink{bib10}{1997}; Mosher, Saville, \& Thormann,
+\hyperlink{bib19}{1992}). For example, Hruska, Jaros, and
+Gas (\hyperlink{bib11}{2006}) have developed freeware
+software, Simul 5, that can be used to simulate various
+linear and non-linear electromigrational systems. Such
+simulations are extremely useful in designing and
+optimizing complex non-linear electrokinetic assays.
+However, derivation of key non-dimensional parameters and
+detailed evaluation of salient physics can be difficult
+starting from such large models. The focus of the current
+paper is to present a simple analytical model that sheds
+light on various complex non-linear electromigration
+phenomena in the context of FASS. In particular, we are
+interested in obtaining key dimensionless parameters
+governing stacking dynamics, and exploring the generation
+of ion concentration shock waves and rarefaction waves in
+the regime where sample concentration is on the order of
+that of the BGE. In FASS, the concentration scales can
+easily vary by three orders of magnitude between the high
+conductivity running buffer and the sample buffer, which is
+often prepared in DI water. Therefore, the appropriate
+scaling of parameters is not easily apparent. We have
+developed a fairly general analytical model for three-ion
+systems that serves to describe stacking processes in
+isoconductive and heterogeneous conductivity system. The
+model shows that the stacking effect is governed by three
+dimensionless ratios---conductivity ratio ($\gamma$), ratio
+of the sample ion concentration to the counterion
+concentration ($\varepsilon$), and the ratio of the product
+of mobility and valence number of sample and co-ions
+($\beta$). We have performed microchip-based
+electrophoresis experiments to validate the model. A
+staggered-T channel microchip was used to generate
+well-defined interface between heterogeneous electrolyte
+solutions. We used quantitative full-field epifluorescence
+microscopy to measure the electric field driven temporal
+and spatial evolution of sample ions. There is good
+quantitative agreement between the model and experiments.
+The experimentally validated model can be used to
+judiciously choose system parameters to control and
+optimize concentration enhancement and the peak shapes.
+
+\section{Theory}
+
+We consider one-dimensional electromigration of three,
+fully ionized ions: A (counter-ion), B (co-ion) and C
+(sample ion). A constant current density, $j_{o}$, is
+applied in the axial direction and the electrolyte system
+is assumed to be electrically neutral. The electrophoretic
+mobility, $\nu$, of various ions is assumed constant. We
+focus on FASS across single and double
+electrolyte-electrolyte interfaces as depicted in
+\hyperref[fig1]{Figure~1}. The single interface
+configuration describes so-called field amplified sample
+injection (FASI) (Burgi \& Chien, \hyperlink{bib4}{1991})
+or large volume sample stacking (LVSS) (Chien,
+\hyperlink{bib6}{1992}) processes. The system is assumed to
+have zero electroosmotic flow and we consider the limit of
+large electromigration-to-diffusive flux ratio (i.e., we
+neglect diffusion). In real systems, diffusion and
+convective contribute to dispersion and slow the FASS
+process (Bharadwaj \& Santiago, \hyperlink{bib1}{2005}).
+
+\begin{figure}[]
+\centering{\includegraphics{FLOSamplefigure1}}
+\caption{(a) FASS system with a single sample/BGE interface.
+Roman numerals I and II denote high conductivity BGE
+and low conductivity sample regions, respectively.}
+\label{fig1}
+\end{figure}
+
+Under these assumptions the governing equations are in
+dimensionless form:
+\begin{align}
+{E}'(x,t)&=\frac{1}{{\sigma }'(x,t)}\label{eq1}\\[6pt]
+\frac{\partial {C}'_A }{\partial {t}'}&=-z_A \frac{\partial
+}{\partial x}\left( {\frac{{C}'_A }{{\sigma }'}} \right)\label{eq2}\\[6pt]
+\frac{\partial {C}'_C }{\partial {t}'}&=-z_C \nu _C
+\frac{\partial }{\partial x}\left( {\frac{{C}'_C }{{\sigma
+}'}} \right)\label{eq3}
+\end{align}
+
+Equations (\ref{eq1}) is the condition of current
+conservation, and equations~(\ref{eq2}) and (\ref{eq3}) are
+the species conservation equation. The concentration of the
+third ion is determined by the electroneutrality condition:
+\begin{equation}\label{eq4}
+{C}'_B =-\frac{\left( {z_C {C}'_C +z_A {C}'_A } \right)}{z_B }
+\end{equation}
+
+The dimensionless variables are the following:
+\begin{equation}\label{eq5}
+{x}'=\frac{x}{s};\ {\nu }'=\frac{\nu }{\nu _A };\ {C}'=\frac{C}{C_{Ao} };\
+{\sigma }'=\frac{\sigma }{F^2\nu _A C_{Ao} };\ {t}'=\frac{tj_o }{FsC_{Ao}}
+\end{equation}
+where $\sigma (x,t)=F^2\sum {z_i^2 } \nu _i C_i $ is the electrical
+conductivity distribution, $s$ is the characteristic length scale of the
+initial concentration gradients, and $C_{Ao}$, is the initial counter-ion
+concentration in the sample region.
+
+The boundary and initial conditions for the concentration fields are for the
+single electrolyte-electrolyte interface are
+\begin{equation}\label{eq6}
+\begin{split}
+{C}'_A ({x}'=-{L}',{t}')=\alpha;\ {C}'_A (x={L}',{t}')=1;\,\alpha>1\, \\
+{C}'_C ({x}'=-{L}',{t}')=0;\ {C}'_C (x={L}',{t}')=\varepsilon.
+\end{split}
+\end{equation}
+
+For a channel length, $L$, much larger than the
+characteristic interface length, $s$, we assume the
+following initial conditions ion distributions:
+\begin{equation}\label{eq7}
+\begin{split}
+ {C}'_A ({x}',{t}'=0)=0.5((1+\alpha )+(1-\alpha )erf({x}')) \\
+ {C}'_C ({x}',{t}'=0)=0.5\varepsilon (1+erf({x}'))
+ \end{split}
+\end{equation}
+
+Here, $\varepsilon=C_{Co}/C_{Ao}$, is the ratio of the
+initial sample concentration and counter-ion concentration
+in the sample region. We will drop the primes in the rest
+of the paper for clarity of presentation.
+
+Further simplification is possible by multiplying
+equation~(\ref{eq2}) by $z_A -z_B \nu _B $ and
+equation~(\ref{eq3}) $z_C -z_B \nu _B /\nu _C $ and adding
+the resulting equations; this leads to
+\begin{equation}\label{eq8}
+C_A (x,t)(z_A -z_B \nu _B )+C_C (x,t)(z_C -z_B \nu _B /\nu
+_C )=f(x)
+\end{equation}
+$f(x)$ is determined solely from the initial conditions and
+can be interpreted as a Kohlrausch regulating function
+(KRF) (Kohlrausch, \hyperlink{bib15}{1897}). This equation
+can be solved for $C_{A}$ in terms of $C_{C}$ and
+substituted back in equation~(\ref{eq3}) to obtain:
+\begin{align}
+\frac{\partial C_C }{\partial t}&=-z_C \nu _C \frac{\partial}{\partial x}\left(\frac{C_C (x,t)}{\sigma'(C_C)}\right)\label{eq9}\\
+{\sigma }'(C_C )&=z_A f(x)+C_C (x,t)\lambda(\beta -1)\label{eq10}
+\end{align}
+where $\lambda =z_B \nu _B (z_C -z_A /\nu _C)$ and $\beta
+=z_C \nu _C /z_B \nu _B$. This form of the equations
+decouples the dynamics of individual ions. We first solve
+for the $C_{C}$ from equation~(\ref{eq9}), and then
+equations~(\ref{eq8}), (\ref{eq4}), and (\ref{eq1}) can be
+used to obtain $C_{A}$, $C_{B}$, and the electric field.
+
+The sample ion concentration distribution is governed by a
+nonlinear hyperbolic equation, and so sharpening (shock
+waves) or dispersion (rarefaction waves) of concentration
+can be expected. equations (\ref{eq9}) can be written as
+\begin{equation}\label{eq11}
+\frac{\partial C_C }{\partial t}=-\frac{z_C \nu _C
+f(x)}{{\sigma }'^2}\frac{\partial C_C }{\partial
+x}+\frac{z_C z_A \nu _C }{{\sigma }'^2}\frac{\partial
+f}{\partial x}C_C.
+\end{equation}
+
+The first term on the right hand side is similar in form to
+an advection of $C_{C}$. The second term is analogous to a
+rate of generation of ion C. The nondimensional wave
+velocity is $z_C \nu _C f(x)/\sigma'^2$, where ${\sigma}'$
+is a function of sample ion concentration $C_{C}$. Equation
+(\ref{eq10}) shows that since $\lambda> 1$, wave velocity
+increases with $C_{C}$ for $\beta < 1$ and decreases for
+$\beta > 1$. For $\beta =1$ the nonlinearity disappears.
+Later, we will show that $\beta$ also governs maximum
+concentration enhancement.
+
+\section{Method of Solution}
+
+We first note that the nonlinear hyperbolic equation
+governing sample ion distribution (equation~(\ref{eq9}))
+can be solved using the method of characteristics (MOC).
+(Bharadwaj \& Santiago, \hyperlink{bib1}{2005}; Whitham,
+\hyperlink{bib21}{1974}). However, the limitation of this
+MOC solution is that it results in unphysical, multi-valued
+concentration fields for cases where concentration shock
+waves form. We therefore use finite volume methods in this
+paper to solve the nonlinear hyperbolic equation governing
+sample ion distribution. Finite volume methods based on the
+integral form of conservation laws are useful to accurately
+capture the so-called \textit{weak solutions} involving
+shock waves. We use the first-order, upwind Godunov's
+method (Leveque, \hyperlink{bib17}{2002}). to solve
+equation~(\ref{eq9}) for the sample ion concentration
+field, $C_{C}$. The time step and the spatial step size
+were chosen based on the CFL condition. Also, the numerical
+solutions for the rarefaction regime were verified (results
+not shown) against analytical solutions obtained using the
+above-mentioned method of characteristics solution.
+
+\section{Kohlrausch Regulating Function (KRF) Analysis}
+
+In this section, we consider a special case of FASS in
+which a sample co-ion is absent in the sample solution. For
+this special case, the sample region contains only A and C
+ions, and that the ions of the BGE are A and B. The
+electroneutrality assumption then requires that
+$\varepsilon =\varepsilon_{\max}=z_A/|z_C|$, and we can
+derive a closed-form expression for maximum concentration
+enhancement using KRF analysis.
+
+Using the initial conditions, given by
+equation~(\ref{eq7}), the magnitude of KRF for the sample
+and BGE regions can be derived as:
+\begin{equation}\label{eq12}
+KRF_S =\frac{C_{Ao} }{\nu _A }-\frac{z_A C_{Ao} }{z_C \nu_C };\
+KRF_{BGE} =\frac{\alpha C_{Ao}}{\nu_A}-\frac{z_A\alpha C_{Ao}}{z_C \nu_C}
+\end{equation}
+As sample ions exit the initial sample region and enter the
+BGE region, $C_{C}$ must conform to
+$\textit{KRF}_{\textit{BGE}}$. (Foret \& Bocek,
+\hyperlink{bib8}{1993}). This constraint leads to
+\begin{equation}\label{eq13}
+\frac{C_{A,new} }{C_{Ao} }=\frac{C_{C,stack} }{C_{Co}}=\alpha \frac{z_A \nu _A -z_B \nu _B }{z_A \nu _A -z_C \nu
+_C }\left( {\frac{z_C \nu _C }{z_B \nu _B}} \right)
+\end{equation}
+where, $C_{A,new}$, is the KRF-adjusted concentration of
+counter-ion. Equation (\ref{eq13}) can be expressed in
+terms of $\gamma$, the ratio of sample and BGE conductivity
+as follows:
+\begin{equation}\label{eq14}
+\gamma =\frac{\sigma _{BGE} }{\sigma _S }=\alpha \frac{z_A \nu _A -z_B \nu _B }{z_A \nu _A -z_C \nu _C }
+\end{equation}
+Substituting equation~(\ref{eq14}) into (\ref{eq13}) we
+obtain:
+\begin{equation}\label{eq15}
+\frac{C_{C,stack} }{C_{Co} }=\gamma \left( {\frac{z_C \nu _C }{z_B \nu _B }} \right)=\beta \gamma
+\end{equation}
+
+This special case clearly shows that the maximum
+concentration enhancement can be higher or lower than
+$\gamma$, depending on the magnitude of $\beta$.
+
+Next, we shall use solutions of Equation (\ref{eq9}) to
+show that concentration enhancement higher or lower than
+$\gamma$ is also possible in the more general case of a
+system with A, B, and C ions in the sample region and A and
+B ions in the BGE region.
+
+\section{Theoretical Results}
+
+The electromigration model developed sheds light on various
+regimes of FASS dynamics. \hyperref[fig2]{Figure~2a(i-iii)}
+shows the development of sample ion concentration field,
+$C_{C}$, the BGE ion concentrations, $C_{A}$ and $C_{B}$,
+and electric field distribution for $\varepsilon \ll1$.
+This situation, frequent in practice, is where a sample ion
+concentration, $C_{C}$, is much smaller than that of the
+BGE. Here, sample ions have a negligible effect on the
+conductivity field and the electrolyte system behaves as a
+binary electrolyte composed of A and B ions. Absent
+diffusion and convection, the concentration distribution is
+described by the initial condition at all times.$^{18}$
+This condition has been referred to as the formation of the
+stationary boundary and is discussed in detail by Bharadwaj
+and Santiago (\hyperlink{bib1}{2005}). Sample ions act as a
+passive scalar whose electromigration is determined by the
+electric field distribution established by underlying BGE
+ions.
+
+\begin{figure}[]
+\centering{\includegraphics{FLOSamplefigure2}}
+\caption{Spatial and temporal distribution of (i) sample ions,
+(ii) BGE ions, (iii) electric field for the following
+three cases: (a) $\gamma =2$, $\varepsilon
+=0.001$, and $\beta=2/3$; (b) $\gamma =2$,
+$\varepsilon =0.4$, and $\beta =2/3$; (c) $\gamma=2$,
+$\varepsilon =0.4$, and $\beta =3/2$. The
+co-ion distribution, $C_{B}$, is represented by dashed
+lines. The ion valence numbers and mobilities values in
+all three cases are: $z_{A}=1$, $z_{B}=-1$,
+$z_{C}=-2$, $\nu_{A}=1$, and $\nu_{C}=2$. $\nu_{B}=6$ for $\beta=2/3$
+and $\nu_{B}=8/3$ for $\beta=3/2$.\label{fig2}}
+\end{figure}
+
+In \hyperref[fig2]{figures~2b} and~\ref{fig2}c we study two
+cases where the sample ion concentration in the initial
+sample region is comparable to that of BGE ions, so that
+$\varepsilon$ is order unity. This condition arises when
+the sample is prepared in very low conductivity buffer or
+DI water, and is also frequent in practice.
+\hyperref[fig2]{Figures~2b(i-iii)} show results for the
+case where the sample-ion-to-co-ion ratio of the product of
+electrophoretic mobility and valence number is less than
+unity, $\beta <1$. \hyperref[fig2]{Figure~2b(i)} shows that
+the maximum concentration enhancement in this regime is
+lower than $\gamma$. Since $\beta<1$, the sample ion wave
+velocity increases with sample concentration. This results
+in a steepening of the concentration profile as the sample
+stacks, resulting in sharp gradients, and tending toward a
+concentration shock wave. \hyperref[fig2]{Figure~2b(ii)}
+shows the concentration distribution of BGE ions, $C_{A}$
+and $C_{B}$. The BGE co-ion $(C_{B})$ and counter-ion
+$(C_{A})$ do not follow binary electrolyte dynamics but
+show complex migration behavior. The electric field shows a
+``two-step'' profile with two inflection points. Therefore,
+the $\beta <1$ regime is an example of the so-called stable
+moving boundary electrophoresis (Foret \& Bocek, \hyperlink{bib8}{1993}) where the sample ions displace the
+BGE co-ions locally, \hyperref[fig2]{Figure~2c} describes
+the case of $\beta
+>1$. For this case, sample ion wave velocity decreases with
+increasing sample concentration, and so concentration
+shocks cannot form. This rarefaction condition,$^{21}$
+however, results in a maximum sample ion concentration
+enhancement greater than $\gamma$. Further, the left edge
+of the concentration profiles becomes progressively
+``diffuse,'' despite the absence of diffusion (or any type
+of dispersion) in the model.
+
+The cases discussed in \hyperref[fig2]{figures 2b} and
+\hyperref[fig2]{2c} are fundamentally different than the
+ideal FASS dynamics of \hyperref[fig2]{figure 2a}. In the
+latter two cases, sample ions have a strong and dynamic
+effect on BGE concentration profiles. The concentration
+enhancement is no longer just a function of the initial
+conductivity ratio but is sensitive to the electrophoretic
+mobility of all the ions in the system. \hyperref[fig3]{In
+figure 3}, we summarize the three regimes of interest. The
+plot shows the maximum concentration enhancement,
+$C_{C.max}/C_{Co}$, normalized by conductivity ratio,
+$\gamma$, as a function of $\varepsilon$ and for various
+values of $\beta$. This normalization of concentration
+enhancement is equal to unity for the ideal condition of
+vanishing $\varepsilon$. For finite $\varepsilon$ (i.e.,
+sample ion concentrations on the order of the those of the
+BGE), the maximum concentration enhancement can be higher
+than gamma $(\beta
+>1)$ or lower than gamma $(\beta<1)$. When
+$\varepsilon =\varepsilon_{max}$ (the special case of only
+A and C ions in the initial sample region), the
+concentration enhancement is given by
+equation~(\ref{eq15}). The parameter $\varepsilon$ governs
+the transition from the ideal ``stationary boundary'' FASS
+regime to a ``moving boundary'' regime.
+\hyperref[fig3]{Figure~3} clearly shows that our model is
+able to predict stacking effects for iso-conductive buffer
+systems ($\gamma=1$) as observed experimentally by\break Liu
+et~al. (\hyperlink{bib18}{2005}).
+
+\begin{figure}[]
+\centering{\includegraphics{FLOSamplefigure3}}
+\caption{Summary of three regimes for FASS. Normalized maximum
+concentration enhancement is plotted as a function of
+$\varepsilon$ and $\beta$. The ion valence numbers
+and mobilities values in all cases are: $z_{A}=1$,
+$z_{B}=-1$, $z_{C}=-2$, $\nu_{A}=1$, and
+$\nu_{C}=2$. Mobility of the co-ion, $\nu_{B}$, is fixed
+by the $\beta$ value.\label{fig3}}
+\end{figure}
+
+It is worthwhile to emphasize the similarities and
+difference between the finite-$\varepsilon$ regimes of FASS
+and isotachophoresis. Similar to ITP, the $\beta< 1$ regime
+discussed above, is characterized by a self-sharpening
+effect. In both cases the maximum concentration enhancement
+is a function of sample ion mobility. In FASS, however,
+there is only one co-ion so that self-sharpening of the
+sample occurs only at one boundary between two zones of
+different conductivity. In ITP, the mobilities of two
+co-ions bound that of the sample ion and hence lead to
+self-sharpening effect at both boundaries of the sample\break zone.
+
+\section{Experimental Results and Model Validation}
+
+An inverted epifluorescence microscope (Olympus IX70)
+equipped with a 10X objective (Olympus, ${\rm NA}=0.4$) and
+a 0.5X demagnifying lens was used for imaging the
+concentration fields of bodipy dye solutions. Illumination
+from a mercury lamp was spectrally filtered at the peak
+absorption and emission wavelengths of 485\,nm and 535\,nm,
+respectively. Images were captured using a cooled CCD
+camera (Cool-SNAP fx, Roper Scientific, Inc., Trenton, NJ)
+having a $1300\times 1030$ array of square pixels, with
+12-bit intensity resolution. A function generator (Agilent,
+33120a) was used to externally trigger the CCD camera to
+acquire images at 30 fps. The exposure time was set to
+10\,ms. A Borofloat glass microchip (Micralyne, Alberta,
+Canada) with staggered-T channel geometry was used for all
+experiments. The width and centerline depth of the
+microchannel are 50\,$\upmu$m and 20\,$\upmu$m, respectively,
+and the channels have the characteristic shape of an
+isotropic wet etch. The lengths of the vertical and
+horizontal channels are 8~and 85\,mm, respectively. The
+length of the chip's injection region (the center-to-center
+distance between the two staggered T sections) is
+100\,$\upmu$m. A 6\,kV voltage supply system (Micralyne,
+Alberta, Canada) was used to control platinum electrode
+potentials mated to the chip reservoirs.
+
+The $\beta<1$ regime can be realized experimentally by
+using chloride ions as the co-ions, $C_{B}$. Chloride ions
+have a high electrophoretic mobility of 7.9e-8\,m$^{2}$V/s
+(Foret \& Bocek, \hyperlink{bib8}{1993}). The sample ion
+was negatively charged bodipy dye ($z_{C}=-1$,
+$\nu_{C}=2$e-8\,m$^{2}$V/s, Invitrogen, California)
+(Bharadwaj et al., \hyperlink{bib1}{2002}). The BGE was
+prepared by adding NaCl salt to deionized ultra-filtered
+(DIUF) water (Fisher Scientific, Baltimore, MD). An equal
+ratio of bodipy dye and sodium hydroxide was added to DIUF
+water to prepare the sample solution. The dye concentration
+was 198\,$\upmu$M in all cases. Experiments were performed
+for three conductivity ratios: $\gamma = 5$, 8.5, and 10.
+For the rarefaction regime ($\beta >1$), we used HEPES as
+the co-ion and Alex Fluor 488 (Invitrogen) dye as the
+sample ions. This combination of ions provides $\beta \sim
+2$. The conductivity ratio for this regime was
+$\gamma=1.9$. The microchip was flushed with acidified poly
+(ethylene oxide) solution to suppress electroosmotic flow
+(EOF) using the method described by Preisler and Yeung
+(\hyperlink{bib20}{1996}). Electrical conductivity was
+measured using a conductivity meter (Pinnacle 542, Corning
+Inc., New York).
+
+\begin{figure}[]
+\centering{\includegraphics{FLOSamplefigure4}}
+\caption{(a) Schematic of microchip system used for the
+experiments. A vacuum is applied to generate the initial
+conductivity gradient. Once the gradient is established, an
+electric field is applied from right-to-left to initiate
+stacking of negatively charged sample ions. (b) CCD Images
+showing development of sample ion concentration
+distribution. In this case $\gamma=5$, $\beta=0.25$,
+and $\varepsilon =1$. At these conditions, the sample ion
+distribution tends toward a shock wave in concentration at
+the leading edge of the sample region. The time between
+each frame was 132\,ms, and the applied nominal electric
+field was 176\,V/cm.\label{fig4}}
+\end{figure}
+
+The interface between high and low conductivity electrolyte
+solutions was generated by applying a vacuum at the north
+reservoir of the microchip as shown in
+\hyperref[fig4]{Figure~4a}. Once the interface was
+established, the vacuum was released and an axial electric
+field was applied in the right-to-left direction. This
+initiates stacking of sample ions at the conductivity
+interface. \hyperref[fig4]{Figure~4b} shows images of the
+stacking process at selected times. The images show an
+increase in fluorescence intensity near the interface due
+to local accumulation of sample ions. The sample ion
+concentration gradients gradually become sharp and tends
+toward a sharp shock wave in concentration as predicted by
+the model for this $\beta<1$ case. The imaged concentration
+gradient in the shock region has an axial length scale,
+$w$, of about 9\,$\upmu$m. This width was estimated by
+fitting the concentration profile with an error function of
+the form, $A(1-erf(x/w))$, where A is a constant
+(regression coefficient of $R^{2}=0.99$). However, this
+measured 9\,$\upmu$m interface width is largely a function
+of fluorescence from out-of-focus dye regions, light
+scatter from channel walls, and other sources of image
+noise. For example, the measured of the ``sharp''
+liquid-to-substrate interface (at the channel wall) was
+approximately 7\,$\upmu$m.
+
+For quantitative analysis of the CCD images, a background
+image is subtracted from the raw image and this difference
+is normalized by the difference between a flatfield and the
+background image (Bharadwaj et al., \hyperlink{bib1}{2006}). To compare the two dimensional
+image data with the one-dimensional model, the intensity
+data for the pixel regions of the microchannel images were
+averaged along the width of the channels, as indicated in
+\hyperref[fig4]{Figure~4b}, to form one-dimensional axial
+intensity profiles. \hyperref[fig5]{Figures~5a} shows the
+temporal development of the sample ion concentration
+distribution for $\gamma =5$ under the $\beta <1$ regime.
+The sample ion concentration increases to a maximum value
+of 1.3, much lower than $\gamma$. The axial width of the
+stacked region then continues to grow without further
+increase in peak concentration value, as predicted by the
+model. This regime is described in
+\hyperref[fig2]{Figure~2b}. The temporal and spatial
+development of concentration field for $\beta>1$ regime is
+shown in \hyperref[fig5]{Figure~5b}. As predicted by
+theory, the concentration enhancement is greater than
+$\gamma$. Also, the rarefaction concentration wave is
+observed. This regime is described in
+\hyperref[fig2]{Figure~2c}.
+
+\begin{figure}[]
+\centering{\includegraphics{FLOSamplefigure5}}
+\caption{(a) Comparison of measured and predicted sample ion
+concentration profiles for $\gamma=5$, $\varepsilon=1$
+and $\beta=0.25$. (b) Comparison of measured and
+predicted sample ion concentration profiles for
+$\gamma=1.9$, $\varepsilon=0.5$ and $\beta=2.3$.
+Model predictions are shown as dotted lines. The
+time between each curve is 33\,ms.\label{fig5}}
+\end{figure}
+
+\begin{figure}[]
+\centering{\includegraphics{FLOSamplefigure6}}
+\caption{Normalized sample ion peak concentration versus dimensional
+time for three values of $\gamma$ and two values of
+$\varepsilon$. In all cases $\beta=0.25$. The
+dotted lines are the model predictions and the circles are
+experimental results. The model accurately predicts the
+final value of concentration enhancement. However, since
+diffusion and other dispersive effects are neglected, the
+model under predicts the time taken to achieve the final
+concentration enhancement.\label{fig6}}
+\end{figure}
+
+\hyperref[fig5]{Figure~5} also shows an overlay comparison
+between model predictions and experimentally measured
+concentration profiles for $\gamma=5$. The model assumes
+constant current density whereas constant voltages are
+applied in the experiments. However, over the short time of
+the experiment, the current density is approximately
+constant. For a meaningful comparison, we fix the current
+density of the model such that the initial electric field
+in the low conductivity sample, $E_{S}$, is equal to the
+expected value in the experiments. Since the length of the
+interface region is small compared to the length of the
+channel, $E_{S}$ can be related to the applied potential as
+$E_S =\gamma V/L_T (1+(\gamma -1)a)$. Here, $V$ is the
+applied voltage, $L_{T}$ is the channel length and, $a$ is
+the fraction of the channel occupied by the low
+conductivity sample. \hyperref[fig5]{Figure~5} shows that
+there is good qualitative comparison in terms of the peak
+shapes and the temporal growth of the maximum
+concentration. The model neglects diffusion and convective
+effects, whereas in the experiments these effects lead to a
+slight broadening of sample profiles. The simple
+electromigrational model therefore underpredicts the time
+required to achieve the final concentration enhancement.
+However, as shown in \hyperref[fig6]{Figure~6}, the final
+value of maximum concentration enhancement is in very good
+agreement with the experiments. The error bars represent
+95{\%} confidence interval over five realizations for the
+three cases. These detailed comparison of the predicted and
+measured dynamics show that the electromigrational model
+can be used to quantitatively predict maximum concentration
+enhancement and approximately predict the time required for
+this and the shape of concentration profiles. The model
+should be useful in optimizing FASS experiments with finite
+$\varepsilon$ values.
+
+\vspace*{-5pt}
+\section{Conclusions and Recommendations}
+
+We have developed an electromigration model to investigate
+the coupled, nonlinear dynamics of three fully ionized
+species across single electrolyte-electrolyte interface. We
+solved the resulting nonlinear hyperbolic equation using
+finite volume methods and conducted a parametric study. The
+degree of sample overloading is determined by
+$\varepsilon$. The ratio of the initial sample
+concentration to that of the initial counter-ion
+concentration in the sample region. For negligible values
+of $\varepsilon$, the maximum concentration enhancement
+approaches $\gamma$. For finite $\varepsilon$, model
+predictions show two distinct regimes of concentration
+enhancement. Transition between the two regimes is governed
+by $\beta$, the dimensionless ratio of the product of
+electrophoretic mobility and valence number of the sample
+ion and the co-ion. The regimes are as follows:
+\begin{itemize}
+\item For $\beta > 1$, the sample ion concentration
+field in the single electrolyte-electrolyte case is
+characterized by a rarefaction wave and maximum
+concentration enhancement is greater than $\gamma$. For
+a finite sample plug, a tailing peak is observed with
+maximum concentration enhancement values that may or
+may not be larger than $\gamma$ (depending on, for
+example, the sample plug length).
+\item For $\beta < 1$, the sample ion concentration wave
+in the single electrolyte-electrolyte case develops
+sharp gradients and tends toward a concentration shock
+wave. For a finite sample plug, a fronting peak is
+predicted. For $\beta <1$ cases, the maximum
+concentration enhancement is always less than $\gamma$.
+\end{itemize}
+We have experimentally validated the model for the two
+regime by using scalar epi-fluorescence imaging to measure
+the sample ion concentration fields. There is good
+qualitative comparison between the model predictions of the
+sample ion concentration profiles. There is good
+quantitative comparison between predicted and measured
+absolute values of maximum concentration enhancement.
+
+Improved understanding of FASS process would be further
+aided by development of multi-species,
+electromigration-diffusion-convection models, which include
+equilibrium reactions and can handle the finite
+$\varepsilon $ regime. Such tools would help to optimize
+FASS systems involving very low conductivity buffers or DI
+water as the sample matrix.\clearpage
+
+\begin{Backmatter}
+
+\paragraph{Acknowledgements}
+We gratefully acknowledge the advice of John Smith who
+commented on a version of this manuscript.
+
+\paragraph{Funding Statement}
+J.G.S gratefully acknowledges funding by an NSF CAREER
+Award (Contract number NSF CTS0239080) with Dr. Michael W.
+Plesniak as contract monitor.
+
+\paragraph{Declaration of Interests}
+The authors declare no conflict of interest.
+
+\paragraph{Author Contributions}
+R.B. and J.G.S. created the research plan, designed
+experiments, and formulated analytical problem. R.B. led
+model solution and performed all experiments. R.B. and
+J.G.S. wrote the manuscript.
+
+\paragraph{Data Availability Statement}
+Raw data are available from the corresponding author
+(J.G.S.).
+
+\paragraph{Ethical Standards}
+The research meets all ethical guidelines, including
+adherence to the legal requirements of the study country.
+
+\paragraph{Supplementary Material}
+Methods section and Supplementary information are available
+at \url{https://doi.org/10.1017/flo.2021.1}.
+
+\begin{thebibliography}{}
+
+\bibitem[Bharadwaj et al.(2005)]{bib1}
+Bharadwaj, R., {\&} Santiago, J. G. (2005). Dynamics of
+field-amplified sample stacking. \textit{Journal of Fluid
+Mechanics}, \textit{543}(57), 57--92.
+
+\bibitem[Bharadwaj et al.(2002)]{bib2}
+Bharadwaj, R., Santiago, J. G., {\&} Mohammadi, B. (2002).
+Design and optimization of on-chip capillary
+electrophoresis. \textit{Electrophoresis}, \textit{23}(16),
+2729--2744.
+
+\bibitem[Bier et al.(1983)]{bib3}
+Bier, M., Palusinski, O. A., Mosher, R. A., {\&} Saville,
+D. A. (1983). Electrophoresis: Mathematical modeling and
+computer simulation. \textit{Science}, \textit{219}(4590),
+1281--1287.
+
+\bibitem[Burgi {\&} Chien(1991)]{bib4}
+Burgi, D. S., {\&} Chien, R. L. (1991). Optimization in
+sample stacking for high-performance capillary
+electrophoresis. \textit{Analytical Chemistry},
+\textit{63}(18), 2042--2047.
+
+\bibitem[Chien {\&} Burgi(1991)]{bib5}
+Chien, R. L., {\&} Burgi, D. S. (1991). Field amplified
+sample injection in high-performance capillary
+electrophoresis. \textit{Journal Chromatography A},
+\textit{559}(1--2), 141--152.
+
+\bibitem[Chien {\&} Burgi(1992)]{bib6}
+Chien, R. L., {\&} Burgi, D. S. (1992). On-column sample
+concentration using field amplification in CZE.
+\textit{Analytical Chemistry}, \textit{64}(8), 1046--1050.
+
+\bibitem[Ermakov et al.(1994)]{bib7}
+Ermakov, S. V., Zhukov, M. Y., Capelli, L., {\&} Righetti,
+P. G. (1994). Experimental and theoretical study of
+artifactual peak splitting in capillary electrophoresis.
+\textit{Analytical Chemistry}, \textit{66}(22), 4034--4042.
+
+\bibitem[Foret {\&} Bocek(1993)]{bib8}
+Foret, F., {\&} Bocek, P. (1993). \textit{Capillary zone
+electrophoresis.} New York, NY: VCH.
+
+\bibitem[Gas {\&} Kenndler(2000)]{bib9}
+Gas, B., {\&} Kenndler, E. (2000). Dispersive phenomena in
+electromigration separation methods.
+\textit{Electrophoresis}, \textit{21}(18), 3888--3897.
+
+\bibitem[Gebaur {\&} Bocek(1997)]{bib10}
+Gebaur, P., {\&} Bocek, P. (1997). Predicting peak symmetry
+in capillary zone electrophoresis: The concept of the peak
+shape diagram. \textit{Analytical Chemistry},
+\textit{69}(8), 1557--1563.
+
+\bibitem[Hruska et al.(2006)]{bib11}
+Hruska, V., Jaros, M., {\&} Gas, B. (2006). Simul 5-free
+dynamic simulator of electrophoresis.
+\textit{Electrophoresis}, \textit{27}(5--6), 984--991.
+
+\bibitem[Jacobson {\&} Ramsey(1995)]{bib12}
+Jacobson, S. C., {\&} Ramsey, J. M. (1995). Microchip
+electrophoresis with sample stacking.
+\textit{Electrophoresis}, \textit{16}(1), 481--486.
+
+\bibitem[Jung et al.(2003)]{bib13}
+Jung, B., Bharadwaj, R., {\&} Santiago, J. G. (2003).
+Thousand fold signal increase using field-amplified sample
+stacking for on-chip electrophoresis.
+\textit{Electrophoresis}, \textit{24}(19--20), 3476--3483.
+
+\bibitem[Jung et al.(2006)]{bib14}
+Jung, B., Bharadwaj, R., {\&} Santiago, J. G. (2006).
+On-chip millionfold sample stacking using transient
+isotachophoresis. \textit{Analytical Chemistry},
+\textit{78}(7), 2319--2327.
+
+\bibitem[Kohlrausch(1897)]{bib15}
+Kohlrausch, F. (1897). About concentration shifts due to
+electrolysis in the interior of solutions and mixed
+solutions. \textit{Annalen der Physik}, \textit{298}(10),
+209--239.
+
+\bibitem[Kuban et al.(2001)]{bib16}
+Kuban, P., Berg, M., Garcia, C., {\&} Karlberg, B. (2001).
+On-line flow sample stacking in a flow injection
+analysis--capillary electrophoresis system: 2000-fold
+enhancement of detection sensitivity for priority phenol
+pollutants. \textit{Journal of Chromatography A},
+\textit{912}(1), 163--170.
+
+\bibitem[Leveque(2002)]{bib17}
+Leveque, R. J. (2002). \textit{Finite volume methods for
+hyperbolic equations.} Cambridge: Cambridge University
+Press.
+
+\bibitem[Liu et al.(2005)]{bib18}
+Liu, Y, Foote, R. S., Jacobson, S. C., {\&} Ramsey, J. M.
+(2005). Stacking due to ionic transport number mismatch
+during sample sweeping on microchips. \textit{Lab on a
+Chip}, \textit{5}, 457--465.
+
+\bibitem[Mosher et al.(1992)]{bib19}
+Mosher, R. A., Saville, D. A., {\&} Thormann, W. (1992).
+\textit{Dynamics of electrophoresis}. New York, NY: VCH.
+
+\bibitem[Preisler {\&} Yeung(1996)]{bib20}
+Preisler, J., {\&} Yeung, E. S. (1996). Characterization of
+nonbonded poly (ethylene oxide) coating for capillary
+electrophoresis via continuous monitoring of electroosmotic
+flow. \textit{Analytical Chemistry}, \textit{68}(17),
+2885--2889.
+
+\bibitem[Whitham(1974)]{bib21}
+Whitham, G. B. (1974). \textit{Linear and nonlinear waves.}
+New York, NY: Wiley-Interscience.
+\end{thebibliography}
+
+\end{Backmatter}
+
+\end{document}
