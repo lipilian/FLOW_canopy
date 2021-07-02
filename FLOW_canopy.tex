@@ -95,24 +95,125 @@ The
 
 \section{Introduction}
 
-Canopies comprising large arrays of rigid or flexible structures are ubiquitous throughout natural environments, and instrumental in a range of engineering applications. Quantifying the distinct fluid-structure interaction and changes in the structure of the flow within and around such canopies is crucial to optimize processes at various spatial scales. In nature, aquatic vegetation canopies  strongly modulate flows \citep{gambi1990flume,chen2013flow}, attenuate waves \citep{fonseca1992preliminary,paul2012wave}, and regulates the turbulence impacting sediment transport, deposition \citep{lefebvre2010influence,ortiz2013mean}, nutrient fluxes \citep{mcglathery2007eutrophication, lawson2012enhancement}, and spore dispersion within agricultural crop fields \citep{mccartney1994dispersal}. In engineering, canopies contribute to the mixing of scalars and fluxes [REF] and offer the potential for energy harvesting via, e.g., piezoelectric devices \citep{bae2014flutter}, among others.
-A review of aquatic vegetation canopy flows by \citet{nepf2012flow} points out that while the frontal area modulates the mean flow, characteristics turbulent length scales are set by the stem width or diameter and spacing, and indicated the possible spatial and temporal flow variability due to canopy oscillations. Quantification of the interaction between flow and flexible canopies is a requirement in the understanding of the distinct processes over the boundary layer above the canopy. 
+Canopies comprising large arrays of rigid or flexible structures are ubiquitous throughout natural 
+environments, and instrumental in a range of engineering applications. Quantifying the distinct 
+fluid-structure interaction and changes in the structure of the flow within and around such canopies 
+is crucial to optimize processes at various spatial scales. In nature, aquatic vegetation canopies  
+strongly modulate flows \citep{gambi1990flume,chen2013flow}, attenuate waves 
+\citep{fonseca1992preliminary,paul2012wave}, and regulates the turbulence impacting sediment 
+transport, deposition \citep{lefebvre2010influence,ortiz2013mean}, 
+nutrient fluxes \citep{mcglathery2007eutrophication, lawson2012enhancement}, 
+and spore dispersion within agricultural crop fields \citep{mccartney1994dispersal}. 
+In engineering, canopies contribute to the mixing of scalars and fluxes [REF] and offer 
+the potential for energy harvesting via, e.g., piezoelectric devices \citep{bae2014flutter}, among others.
+A review of aquatic vegetation canopy flows by \citet{nepf2012flow} points out that while 
+the frontal area modulates the mean flow, characteristics turbulent length scales are set by 
+the stem width or diameter and spacing, and indicated the possible spatial and temporal flow 
+variability due to canopy oscillations. Quantification of the interaction between flow and 
+flexible canopies is a requirement in the understanding of the distinct processes over the 
+boundary layer above the canopy. 
 
 
-Flexible structures exposed to flows undergo reduced drag compared to a rigid counterpart \citep{vogel1984drag, gosselin2010drag}.  \cite{luhar2011flow} assessed the role of blade stiffness and buoyancy on blade reconfiguration, and proposed a model for drag and extent of reconfiguration, applicable to seagrass and microalgae in natural settings. Their model defines the degree of reconfiguration as a function of the dimensionless ratio of drag to stiffness restoring force (Cauchy number, $Ca$) and the ratio of the restoring force due to buoyancy and the stiffness (buoyancy parameter, $B$), defined as $Ca=\rho_f bl^{3}U^{2}/(EI)$ and $B= (\rho_f - \rho_v) gbdl^{3}/(EI)$, where  $\rho_{f}$ and $\rho_{v}$ are the fluid and blade material densities,  $b$, $d$ and $l$ are the width, thickness and length of each blade,  $U$  is the bulk incoming velocity, $E$ is the Young Modulus, and  $I$  is the second moment of inertia \citep{luhar2016wave}. In addition to the material properties, the blade geometry further alters the reconfiguration behavior \citep{albayrak2012flow}, and the unsteady dynamics \citep{jin2018flow}.
+Flexible structures exposed to flows undergo reduced drag compared to a rigid counterpart
+ \citep{vogel1984drag, gosselin2010drag}.  
+ \cite{luhar2011flow} assessed the role of blade stiffness and 
+ buoyancy on blade reconfiguration, and proposed a model for drag and extent 
+ of reconfiguration, applicable to seagrass and microalgae in natural settings. 
+ Their model defines the degree of reconfiguration as a function of the dimensionless 
+ ratio of drag to stiffness restoring force (Cauchy number, $Ca$) and the ratio of the 
+ restoring force due to buoyancy and the stiffness (buoyancy parameter, $B$), defined 
+ as $Ca=\rho_f bl^{3}U^{2}/(EI)$ and $B= (\rho_f - \rho_v) gbdl^{3}/(EI)$, where
+   $\rho_{f}$ and $\rho_{v}$ are the fluid and blade material densities,  $b$, $d$ and $l$ are 
+   the width, thickness and length of each blade,  $U$  is the bulk incoming velocity, $E$ is 
+   the Young Modulus, and  $I$  is the second moment of inertia \citep{luhar2016wave}. In addition 
+   to the material properties, the blade geometry further alters the reconfiguration behavior 
+   \citep{albayrak2012flow}, and the unsteady dynamics \citep{jin2018flow}.
 
-\citet{naudascher2017flow} discussed three mechanisms of flow-induced motion (FIM) of flexible elements, namely, i) an instability-induced excitation (IIE) due to a self-induced flow instability, such as wake turbulence generated by vortex shedding, including vortex-induced vibrations (VIVs), ii) an extraneously-induced excitation (EIE) caused by incoming flow fluctuations that develop independently from the plate, and iii) a motion-induced excitation (MIE) that occurs as a result of changes in the surrounding fluid forces due to the plate vibration. The motion of flexible plates can result from one process or multiple FIM processes. The frequency of VIV of a flexible structure usually corresponds to the well-known Strouhal relationship, such that the frequency of vortex shedding  $f_v= \frac{S_tU}{L}$, where  $S_t$  is the Strouhal number, and $L$ is the blade length scale, which is the diameter in cylindrical structures. \citet{jin2018instability} noted a decoupling between the frequency of the natural blade frequency and wake flow fluctuations; vortex shedding following the Strouhal relationship may occur without inducing blade motion and reasoned this was due to the dependence on blade stiffness. Characterization of such dynamics in flexible canopies is currently limited.
+\citet{naudascher2017flow} discussed three mechanisms 
+of flow-induced motion (FIM) of flexible elements, namely, i) 
+an instability-induced excitation (IIE) due to a self-induced 
+flow instability, such as wake turbulence generated by vortex 
+shedding, including vortex-induced vibrations (VIVs), ii) an 
+extraneously-induced excitation (EIE) caused by incoming flow 
+fluctuations that develop independently from the plate, and iii) a 
+motion-induced excitation (MIE) that occurs as a result of changes 
+in the surrounding fluid forces due to the plate vibration. The motion 
+of flexible plates can result from one process or multiple FIM processes. 
+The frequency of VIV of a flexible structure usually corresponds to the 
+well-known Strouhal relationship, such that the frequency of vortex 
+shedding  $f_v= \frac{S_tU}{L}$, where  $S_t$  is the Strouhal number, 
+and $L$ is the blade length scale, which is the diameter in cylindrical structures.
+ \citet{jin2018instability} noted a decoupling between the frequency of the natural 
+ blade frequency and wake flow fluctuations; vortex shedding following the Strouhal 
+ relationship may occur without inducing blade motion and reasoned this was due to the 
+ dependence on blade stiffness. Characterization of such dynamics in flexible canopies 
+ is currently limited.
 
-The presence of neighboring flexible plates may lead to distinct dynamics and flow, with such interactions being dependent on the relative spacing and alignment of the structures. \citet{kim2010constructive} found that due to vortex shedding from an upstream flag, the drag on a downstream structure either increased or decreased depending on the phase. \citet{jin2018couple} inspected two plates in tandem, and noted that the motion of the upstream plates was related to the natural blade frequency, whereas the oscillations of the downstream body depended on the structure of the flow shed from the upstream plate. This coupled effect is dependent on the separation between the blades, with the reduced coupling at increased spacing. The motions of singular and tandem blades are instrumental in understanding the flow-structure interaction in complex canopies.
+The presence of neighboring flexible plates may lead to distinct dynamics and flow, with 
+such interactions being dependent on the relative spacing and alignment of the structures.
+ \citet{kim2010constructive} found that due to vortex shedding from an upstream flag, the 
+ drag on a downstream structure either increased or decreased depending on the phase. 
+ \citet{jin2018couple} inspected two plates in tandem, and noted that the motion of the 
+ upstream plates was related to the natural blade frequency, whereas the oscillations of 
+ the downstream body depended on the structure of the flow shed from the upstream plate. This 
+ coupled effect is dependent on the separation between the blades, with the reduced coupling at 
+ increased spacing. The motions of singular and tandem blades are instrumental in understanding 
+ the flow-structure interaction in complex canopies.
 
-The dynamics of flexible plates within a canopy may result in distinct flows. \citet{finnigan2000turbulence} presented a comprehensive review of the flow dynamics and turbulence within terrestrial plant canopies. Canopy obstruction and imposed drag cause an inflection point in the vertical profile of streamwise velocity, leading to the formation of a shear layer susceptible to Kelvin-Helmholtz (KH) instability, which may result in a mixing layer dominated by comparatively large coherent vortices \citealp{raupach1996coherent, ghisalberti2002mixing, nepf2012flow}.  \citet{okamoto2013spatial} explored the transition of a boundary layer impinging a canopy into a fully-developed mixing layer region dominated by coherent vortices further downstream. Coherent vortices can then result in canopy motion, which has been categorized depending on the extent of the motions into negligible, gently swaying, energetic coherent waving (\textit{monami}), and prone \citep{nepf2000flow}. \citet{ghisalberti2006structure} linked canopy motion to the existence of sweep and ejection events, which in turn influence the turbulence statistics and vertical mixing. \citet{ghisalberti2006structure} highlighted significant interactions between canopy motion and hydrodynamics, finding that canopy waving resulted in a substantial decrease in turbulent momentum transfer through the shear layer. The dynamics of the plates within flexible canopies and the induced coherent flow structures remain, however, not partially understood.
+The dynamics of flexible plates within a canopy may result in distinct 
+flows. \citet{finnigan2000turbulence} presented a comprehensive review of 
+the flow dynamics and turbulence within terrestrial plant canopies. Canopy obstruction 
+and imposed drag cause an inflection point in the vertical profile of streamwise velocity, 
+leading to the formation of a shear layer susceptible to Kelvin-Helmholtz (KH) instability, 
+which may result in a mixing layer dominated by comparatively large coherent vortices 
+\citealp{raupach1996coherent, ghisalberti2002mixing, nepf2012flow}.  \citet{okamoto2013spatial} 
+explored the transition of a boundary layer impinging a canopy into a fully-developed mixing layer 
+region dominated by coherent vortices further downstream. Coherent vortices can then result in canopy 
+motion, which has been categorized depending on the extent of the motions into negligible, 
+gently swaying, energetic coherent waving (\textit{monami}), and prone \citep{nepf2000flow}. 
+\citet{ghisalberti2006structure} linked canopy motion to the existence of sweep and ejection 
+events, which in turn influence the turbulence statistics and vertical mixing. 
+\citet{ghisalberti2006structure} highlighted significant interactions between 
+canopy motion and hydrodynamics, finding that canopy waving resulted in a substantial 
+decrease in turbulent momentum transfer through the shear layer. The dynamics of the plates 
+within flexible canopies and the induced coherent flow structures remain, however, 
+not partially understood.
 
-A large fraction of velocity measurements above and within flexible canopies have relied on single-point measurements, with somewhat limited studies capturing the spatial distribution and dynamics of the flow field. \citet[2016]{okamoto2009turbulence, okamoto2013spatial} provided an understanding of coherent flow structures and canopy motions using particle image velocimetry (PIV) combined with simultaneous particle tracking velocimetry (PTV). In particular, \citet{okamoto2009turbulence} suggested that coherent vortices are responsible for the generation of monami, which in turn modulates momentum transfer. Recent investigation \citep{okamoto2016flow} noted the initiation of monami by positive streamwise velocity perturbations associated with vortices passing the canopy top, along with a strong correlation between streamwise velocity fluctuations and canopy motion at a comparatively low frequency.
+A large fraction of velocity measurements above and within flexible 
+canopies have relied on single-point measurements, with somewhat limited 
+studies capturing the spatial distribution and dynamics of the flow field. 
+\citet[2016]{okamoto2009turbulence, okamoto2013spatial} provided an understanding 
+of coherent flow structures and canopy motions using particle image velocimetry (PIV) 
+combined with simultaneous particle tracking velocimetry (PTV). In particular, 
+\citet{okamoto2009turbulence} suggested that coherent vortices are responsible for 
+the generation of monami, which in turn modulates momentum transfer. Recent investigation 
+\citep{okamoto2016flow} noted the initiation of monami by positive streamwise velocity 
+perturbations associated with vortices passing the canopy top, along with a strong correlation 
+between streamwise velocity fluctuations and canopy motion at a comparatively low frequency.
  
-Very recently, \citet{o2019dynamic} employed 2D numerical simulations to illustrate that coupled interactions between the flow and canopy plate properties may be responsible for coherent monami. Their parameterizations covered a range of mass ratios and bending rigidities and enabled canopy and plate motion to be separated into four motion-based conditions, namely, static, regular waving, irregular waving, and flapping. This variability in plate dynamics was dependent on the relationship between natural blade frequency, and the mixing layer instability frequency, in addition to sheltering effects caused by surrounding plates. The similarity of mixing layer instability and blade natural frequency resulted in regular waving, whereas deviation from this resulted in temporal and spatial differences in motion (irregular waving), or a uniform defected state (static). The flapping state was characterized by the second mode natural frequency of the plates, resulting in smaller flow structures than waving canopies, clearly indicating the role of structural properties on motion dynamics.
+Very recently, \citet{o2019dynamic} employed 2D numerical simulations to illustrate 
+that coupled interactions between the flow and canopy plate properties may be responsible 
+for coherent monami. Their parameterizations covered a range of mass ratios and bending 
+rigidities and enabled canopy and plate motion to be separated into four motion-based conditions, 
+namely, static, regular waving, irregular waving, and flapping. This variability in plate dynamics 
+was dependent on the relationship between natural blade frequency, and the mixing layer instability 
+frequency, in addition to sheltering effects caused by surrounding plates. The similarity of mixing 
+layer instability and blade natural frequency resulted in regular waving, whereas deviation from 
+this resulted in temporal and spatial differences in motion (irregular waving), or a uniform defected 
+state (static). The flapping state was characterized by the second mode natural frequency of the 
+plates, resulting in smaller flow structures than waving canopies, clearly indicating the role of 
+structural properties on motion dynamics.
 
 
-Besides, quantification of the distinct fluid dynamics from unsteady blades with reduced motions within fully submerged, flexible canopies remains obscure. Necessary to advancing such knowledge is the assessment of the plate motions and flow properties at high temporal and spatial resolutions to uncover the distinct role of coherent motions. Here, we use a combination of PIV and PTV to quantify the turbulence and plate motions in a canopy under very low Cauchy numbers to assess the modulation of a fraction of plate motions in canopy turbulence; comparison with a rigid case will help to evaluate such modulation further.  The experimental setup is described in $\S$2, measurements and discussion are presented in $\S$3, and the main conclusions a summarized in $\S$4.
+Besides, quantification of the distinct fluid dynamics from unsteady blades with reduced 
+motions within fully submerged, flexible canopies remains obscure. Necessary to advancing 
+such knowledge is the assessment of the plate motions and flow properties at high temporal and 
+spatial resolutions to uncover the distinct role of coherent motions. Here, we use a combination 
+of PIV and PTV to quantify the turbulence and plate motions in a canopy under very low Cauchy 
+numbers to assess the modulation of a fraction of plate motions in canopy turbulence; comparison 
+with a rigid case will help to evaluate such modulation further.  
+The experimental setup is described in $\S$2, measurements and discussion are 
+presented in $\S$3, and the main conclusions a summarized in $\S$4.
 
 
 \begin{figure}
@@ -124,12 +225,38 @@ Besides, quantification of the distinct fluid dynamics from unsteady blades with
 
 \section{Experimental Setup}\label{sec:rules_submission}
 
-A canopy with a reduced flexibility and a rigid counterpart were placed fully submerged in a 2.5 m long,  recirculating refractive-index-matching (RIM) flume of cross section 112.5 mm $\times$ 112.5 mm.  An aqueous sodium iodide solution of density $\rho_f = 1800$ kg m$^{-3}$ and kinematic viscosity $\nu = 1.1 \times 10^{-6}$ m$^2$ s$^{-1}$ was used as working fluid. This technique allowed measurements close to the wall, ensured uniform illumination in the interrogation regions and optical access within the rigid canopy. Additional  information about RIM can be found in \citet{blois2012versatile,bai2014refractive} and \citet{hamed2017impact}.
+A canopy with a reduced flexibility and a rigid counterpart were placed fully submerged in a 2.5 m long,
+  recirculating refractive-index-matching (RIM) flume of cross section 112.5 mm $\times$ 112.5 mm.  
+  An aqueous sodium iodide solution of density $\rho_f = 1800$ kg m$^{-3}$ and kinematic 
+  viscosity $\nu = 1.1 \times 10^{-6}$ m$^2$ s$^{-1}$ was used as working fluid. This technique 
+  allowed measurements close to the wall, ensured uniform illumination in the interrogation regions 
+  and optical access within the rigid canopy. Additional  information about RIM can be found 
+  in \citet{blois2012versatile,bai2014refractive} and \citet{hamed2017impact}.
 
 
-The flexible and rigid canopies shared the same geometry characterized by prismatic blades of height  $h=37.5$ mm, width $w=6.4$ mm or $h/w\approx 5.9$, and thickness $e=2$ mm. The blades were distributed in a staggered pattern with streamwise and transverse spacing of $S_x=\Delta x/w=1.56$ and $S_y= \Delta y/w=3.125$; see basic schematic in figure \ref{canopy_model}. This resulted in a dense canopy with total frontal area per bed unit area of $\lambda_f = $ 1.2 \citep{finnigan2000turbulence}, and a frontal area per canopy volume of $a = n_sd =$ 32 m$^{-1}$. It is worth pointing out that this arrangement is similar to that studied by \citet{hamed2017impact} with rigid, heterogeneous canopies. The model canopies covered the transverse span of the flume, had a streamwise length of $\Delta x/h\approx 5$ and was placed at $\Delta x/h\approx 19$ from the inlet. There, the incoming boundary layer of $\delta=7.5$ mm induced  negligible effects on the canopy, which was placed over a 5-mm acrylic base. The flexible canopy was casted from Silicone with a Young's Modulus of $E$ = 2.05 MPa and density $\rho_m$ = 1030 kg m$^{-3}$.
+The flexible and rigid canopies shared the same geometry characterized by prismatic blades of 
+height  $h=37.5$ mm, width $w=6.4$ mm or $h/w\approx 5.9$, and thickness $e=2$ mm. The blades were 
+distributed in a staggered pattern with streamwise and transverse spacing 
+of $S_x=\Delta x/w=1.56$ and $S_y= \Delta y/w=3.125$; see basic schematic in figure \ref{canopy_model}. 
+This resulted in a dense canopy with total frontal area per bed unit area of $\lambda_f = $ 
+1.2 \citep{finnigan2000turbulence}, and a frontal area per canopy volume of $a = n_sd =$ 32 m$^{-1}$. 
+It is worth pointing out that this arrangement is similar to that studied by \citet{hamed2017impact} 
+with rigid, heterogeneous canopies. The model canopies covered the transverse span of the flume, had 
+a streamwise length of $\Delta x/h\approx 5$ and was placed at $\Delta x/h\approx 19$ from the inlet. 
+There, the incoming boundary layer of $\delta=7.5$ mm induced  negligible effects on the canopy, which 
+was placed over a 5-mm acrylic base. The flexible canopy was casted from Silicone with a Young's Modulus 
+of $E$ = 2.05 MPa and density $\rho_m$ = 1030 kg m$^{-3}$.
 
-The motions of the blades within two columns along the streamwise span of the flexible canopy and induced turbulence were explored under three bulk flows ($U_b$); whereas the turbulence induced by the rigid canopy was inspected under one of the flow coinciding with the flexible counterpart. Details of the corresponding Reynolds numbers $Re_H = U_{\infty}H/\nu$, the Froude numbers $Fr = U_{\infty}/\sqrt{gH}$, Cauchy numbers $Ca = \rho_f b {U_0}^2 h^3/(EI)$ \citep{luhar2016wave} and friction velocities at the canopy height $u_* = -\langle u^\prime v^\prime\rangle ^{1/2}$ \citep{poggi2004effect, nezu2008turburence, chen2013flow} are given in table \ref{input}. Here, $g$ is the acceleration of gravity, $\langle \cdot \rangle$ is the time-averaging operator, and primes denote fluctuating quantities.
+The motions of the blades within two columns along the streamwise span of the flexible canopy 
+and induced turbulence were explored under three bulk flows ($U_b$); whereas the turbulence induced 
+by the rigid canopy was inspected under one of the flow coinciding with the flexible counterpart. 
+Details of the corresponding Reynolds numbers $Re_H = U_{\infty}H/\nu$, the Froude 
+numbers $Fr = U_{\infty}/\sqrt{gH}$, Cauchy numbers $Ca = \rho_f b {U_0}^2 h^3/(EI)$ 
+\citep{luhar2016wave} and friction velocities at the canopy 
+height $u_* = -\langle u^\prime v^\prime\rangle ^{1/2}$ 
+\citep{poggi2004effect, nezu2008turburence, chen2013flow} are given in 
+table \ref{input}. Here, $g$ is the acceleration of gravity, $\langle \cdot \rangle$ is 
+the time-averaging operator, and primes denote fluctuating quantities.
 
  
  \begin{table}
@@ -148,9 +275,24 @@ Case & Canopy & $U_{\infty}$  & $Re_H$   &   $Fr$ & $Ca$ & $u_*$ \\[3pt]
 	\end{center}
 \end{table}
 
-Flow statistics and structure of the turbulence for each scenario were obtained with complementary high-resolution and high-speed particle image velocimetry (PIV) systems from TSI.  Two fields of view (FOV) located in the middle of the canopy models were illuminated by a 1 mm thick laser sheet generated by a 250 mJ pulse$^{-1}$ double-pulsed laser from Quantel. Silver-coated, hollow glass spheres of diameter 14 $\mu$m and density of 1700 kg m$^{-1}$ were used as seeding. Two thousand image pairs were acquired by an 11 megapixel (4000 $\times$ 2672 pixels), 12-bit, frame straddle, CCD camera. The image pairs were processed by the recursive cross-correlation method by using the Insight 4G software from TSI. The final interrogation window was 24 $\times$ 24 pixels with 50$\%$ overlap, resulting in a vector grid spacing $\Delta x = \Delta y = 720 \mu$m.
+Flow statistics and structure of the turbulence for each scenario were obtained with complementary 
+high-resolution and high-speed particle image velocimetry (PIV) systems from TSI.  Two fields of 
+view (FOV) located in the middle of the canopy models were illuminated by a 1 mm thick laser sheet 
+generated by a 250 mJ pulse$^{-1}$ double-pulsed laser from Quantel. Silver-coated, hollow glass 
+spheres of diameter 14 $\mu$m and density of 1700 kg m$^{-1}$ were used as seeding. Two thousand 
+image pairs were acquired by an 11 megapixel (4000 $\times$ 2672 pixels), 12-bit, frame straddle, 
+CCD camera. The image pairs were processed by the recursive cross-correlation method by using the 
+Insight 4G software from TSI. The final interrogation window was 24 $\times$ 24 pixels with 50$\%$ 
+overlap, resulting in a vector grid spacing $\Delta x = \Delta y = 720 \mu$m.
 
-The plates within the two central columns of the canopy were simultaneously tracked at a frequency of 150 Hz during periods of 60 s, i.e., 9000 images, for every case. A Mikrotron EoSens 4CXP MC 4082 camera at 2 MP resolution with a Nikon AF Micro-Nikkor 50 mm lens was used for the tracking. The illumination was provided by two Stanley Lithium-Ion Halogen Spotlights. The tips of each blade were carefully marked at the center to improve the motion tracking. Finally, the raw images were processed with a pixel to distance ratio of 0.08 mm pixel$^{-1}$ by the open-source OpenPTV. Detailed information on the PTV system can be found in \citet{kim2016three}. Figure \ref{schematics} illustrates the basic characteristics of the setup.
+The plates within the two central columns of the canopy were simultaneously tracked at a 
+frequency of 150 Hz during periods of 60 s, i.e., 9000 images, for every case. A Mikrotron 
+EoSens 4CXP MC 4082 camera at 2 MP resolution with a Nikon AF Micro-Nikkor 50 mm lens was 
+used for the tracking. The illumination was provided by two Stanley Lithium-Ion Halogen Spotlights. 
+The tips of each blade were carefully marked at the center to improve the motion tracking. Finally, 
+the raw images were processed with a pixel to distance ratio of 0.08 mm pixel$^{-1}$ by the open-source 
+OpenPTV. Detailed information on the PTV system can be found in \citet{kim2016three}. 
+Figure \ref{schematics} illustrates the basic characteristics of the setup.
 
 
 
@@ -301,7 +443,7 @@ The mean flow field reveal the impact of the plate reconfiguration and motions i
 
 \subsection{On the equivalent local force acting on the plates}
 
-
+\clearpage
 
 
 
@@ -345,6 +487,194 @@ adherence to the legal requirements of the study country.
 Methods section and Supplementary information are available
 at \url{https://doi.org/10.1017/flo.2021.1}.
 
+% ! Liu Hong modify the bibitem
+\begin{thebibliography}{}
+
+\bibitem[Jin et al.(2018)]{jin2018flow}
+Jin, Y., Kim, J., T., Hong, L. {\&} Chamorro, L., P.(2018)
+Flow-induced oscillations of low-aspect-ratio flexible plates with various tip geometries.
+	\textit{Phys Fluids}, \textit{30}(9), 097102.
+
+\bibitem[Okamoto et al.(2016)]{okamoto2016flow}
+Okamoto, T., Nezu, I. {\&} Sanjou, M.(2016)
+Flow--vegetation interactions: length-scale of the “monami” phenomenon.
+	\textit{J Hydraul Eng}, \textit{54}(3), 251--262.
+
+\bibitem[Hamed et al.(2017)]{hamed2017impact}
+Hamed, A., M., Sadowski, M., J., Nepf, H., M. {\&} Chamorro, L., P.(2017)
+Impact of height heterogeneity on canopy turbulence.
+	\textit{J Fluid Mech}, \textit{813}, 1176--1196.
+
+\bibitem[Nepf, H., M.(2012)]{nepf2012flow}
+Nepf, H., M.(2012)
+Flow and transport in regions with aquatic vegetation.
+	\textit{Annu Rev Fluid Mech}, \textit{44}, 123--142.
+
+\bibitem[Raupach et al.(1996)]{raupach1996coherent}
+Raupach, M., R., Finnigan, J., J. {\&} Brunet, Y.(1996)
+Coherent eddies and turbulence in vegetation canopies: the mixing-layer analogy.
+	\textit{Boundary-Layer Meteorology 25th Anniversary Volume, 1970--1995}, 351--382.
+
+\bibitem[Nezu, I. {\&} Sanjou, M.(2008)]{nezu2008turburence}
+Nezu, I. {\&} Sanjou, M.(2008)
+Turburence structure and coherent motion in vegetated canopy open-channel flows.
+	\textit{J Hydro-environ Res}, \textit{2}(2), 62--90.
+
+\bibitem[Ghisalberti, M. {\&} Nepf, H., M.(2002)]{ghisalberti2002mixing}
+Ghisalberti, M. {\&} Nepf, H., M.(2002)
+Mixing layers and coherent structures in vegetated aquatic flows.
+	\textit{J Geophys Res-Oceans}, \textit{107}(C2).
+
+\bibitem[Blois et al.(2012)]{blois2012versatile}
+Blois, G., Christensen, K., Best, J., Elliott, G., Austin, J., Dutton, J., C., Bragg, M., Garcia, M. {\&} Fouke, B.(2012)
+A versatile refractive-index-matched flow facility for studies of complex flow systems across scientific disciplines.
+	\textit{50th AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition}, 736.
+
+\bibitem[Bai, K. {\&} Katz, J.(2014)]{bai2014refractive}
+Bai, K. {\&} Katz, J.(2014)
+On the refractive index of sodium iodide solutions for index matching in PIV.
+	\textit{Exp Fluids}, \textit{55}(4), 1704.
+
+\bibitem[Finnigan, J.(2000)]{finnigan2000turbulence}
+Finnigan, J.(2000)
+Turbulence in plant canopies.
+	\textit{Annu Rev Fluid Mech}, \textit{32}(1), 519--571.
+
+\bibitem[Luhar, M. {\&} Nepf, H., M.(2016)]{luhar2016wave}
+Luhar, M. {\&} Nepf, H., M.(2016)
+Wave-induced dynamics of flexible blades.
+	\textit{J Fluids Struct}, \textit{61}, 20--41.
+
+\bibitem[Chen et al.(2013)]{chen2013flow}
+Chen, Z., Jiang, C. {\&} Nepf, H.(2013)
+Flow adjustment at the leading edge of a submerged aquatic canopy.
+	\textit{Water Resour Res}, \textit{49}(9), 5537--5551.
+
+\bibitem[Poggi et al.(2004)]{poggi2004effect}
+Poggi, D., Porporato, A., Ridolfi, L., Albertson, J., D. {\&} Katul, G., G.(2004)
+The effect of vegetation density on canopy sub-layer turbulence.
+	\textit{Boundary Layer Meteorol}, \textit{111}(3), 565--587.
+
+\bibitem[Kim et al.(2016)]{kim2016three}
+Kim, J., T., Kim, D., Liberzon, A. {\&} Chamorro, L., P.(2016)
+Three-dimensional particle tracking velocimetry for turbulence applications: Case of a jet flow.
+	\textit{Jove-J Vis Exp}.
+
+\bibitem[Ghisalberti, M. {\&} Nepf, H.(2006)]{ghisalberti2006structure}
+Ghisalberti, M. {\&} Nepf, H.(2006)
+The structure of the shear layer in flows over rigid and flexible canopies.
+	\textit{Environ Fluid Mech}, \textit{6}(3), 277--301.
+
+\bibitem[Nepf, H., M. {\&} Vivoni, E., R.(2000)]{nepf2000flow}
+Nepf, H., M. {\&} Vivoni, E., R.(2000)
+Flow structure in depth-limited, vegetated flow.
+	\textit{J Geophys Res-Oceans}, \textit{105}(C12), 28547--28557.
+
+\bibitem[Jin et al.(2018)]{jin2018couple}
+Jin, Y., Kim, J., T., Mao, Z. {\&} Chamorro, L., P.(2018)
+On the couple dynamics of wall-mounted flexible plates in tandem.
+	\textit{J Fluid Mech}, \textit{852}.
+
+\bibitem[Okamoto, T., A. {\&} Nezu, I.(2009)]{okamoto2009turbulence}
+Okamoto, T., A. {\&} Nezu, I.(2009)
+Turbulence structure and “Monami” phenomena in flexible vegetated open-channel flows.
+	\textit{J Hydraulic Res}, \textit{47}(6), 798--810.
+
+\bibitem[Okamoto, T. {\&} Nezu, I.(2013)]{okamoto2013spatial}
+Okamoto, T. {\&} Nezu, I.(2013)
+Spatial evolution of coherent motions in finite-length vegetation patch flow.
+	\textit{Environ Fluid Mech}, \textit{13}(5), 417--434.
+
+\bibitem[Ortiz et al.(2013)]{ortiz2013mean}
+Ortiz, A., C., Ashton, A. {\&} Nepf, H.(2013)
+Mean and turbulent velocity fields near rigid and flexible plants and the implications for deposition.
+	\textit{J Geophys Res-Earth}, \textit{118}(4), 2585--2599.
+
+\bibitem[Paul et al.(2012)]{paul2012wave}
+Paul, M., Bouma, T., J. {\&} Amos, C., L.(2012)
+Wave attenuation by submerged vegetation: combining the effect of organism traits and tidal current.
+	\textit{Mar Ecol Prog Ser}, \textit{444}, 31--41.
+
+\bibitem[Vogel, S.(1984)]{vogel1984drag}
+Vogel, S.(1984)
+Drag and flexibility in sessile organisms.
+	\textit{Am Zool}, \textit{24}(1), 37--44.
+
+\bibitem[Lefebvre et al.(2010)]{lefebvre2010influence}
+Lefebvre, A., Thompson, C., E., L. {\&} Amos, C., L.(2010)
+Influence of Zostera marina canopies on unidirectional flow, hydraulic roughness and sediment movement.
+	\textit{Cont Shelf Res}, \textit{30}(16), 1783--1794.
+
+\bibitem[Luhar, M. {\&} Nepf, H., M.(2011)]{luhar2011flow}
+Luhar, M. {\&} Nepf, H., M.(2011)
+Flow-induced reconfiguration of buoyant and flexible aquatic vegetation.
+	\textit{Limnol Oceanogr}, \textit{56}(6), 2003--2017.
+
+\bibitem[McCartney, H., A.(1994)]{mccartney1994dispersal}
+McCartney, H., A.(1994)
+Dispersal of spores and pollen from crops.
+	\textit{Grana}, \textit{33}(2), 76--80.
+
+\bibitem[McGlathery et al.(2007)]{mcglathery2007eutrophication}
+McGlathery, K., J., Sundb{\"a}ck, K. {\&} Anderson, I., C.(2007)
+Eutrophication in shallow coastal bays and lagoons: the role of plants in the coastal filter.
+	\textit{Mar Ecol Prog Ser}, \textit{348}, 1--18.
+
+\bibitem[Naudascher, E.(2017)]{naudascher2017flow}
+Naudascher, E.(2017)
+Flow-induced Vibrations: an Engineering Guide: IAHR Hydraulic Structures Design Manuals 7.
+	\textit{Routledge}.
+
+\bibitem[O’Connor, J. {\&} Revell, A.(2019)]{o2019dynamic}
+O’Connor, J. {\&} Revell, A.(2019)
+Dynamic interactions of multiple wall-mounted flexible flaps.
+	\textit{J Fluid Mech}, \textit{870}, 189--216.
+
+\bibitem[Fonseca, M., S. {\&} Cahalan, J., A.(1992)]{fonseca1992preliminary}
+Fonseca, M., S. {\&} Cahalan, J., A.(1992)
+A preliminary evaluation of wave attenuation by four species of seagrass.
+	\textit{Estuarine Coastal Shelf Sci}, \textit{35}(6), 565--576.
+
+\bibitem[Gambi et al.(1990)]{gambi1990flume}
+Gambi, M., C., Nowell, A., R., M. {\&} Jumars, P., A.(1990)
+Flume observations on flow dynamics in Zostera marina(eelgrass) beds..
+	\textit{Marine ecology progress series. Oldendorf}, \textit{61}(1), 159--169.
+
+\bibitem[Gosselin et al.(2010)]{gosselin2010drag}
+Gosselin, F., De Langre, E. {\&} Machado-Almeida, B., A.(2010)
+Drag reduction of flexible plates by reconfiguration.
+	\textit{J Fluid Mech}, \textit{650}, 319--341.
+
+\bibitem[Jin et al.(2018)]{jin2018instability}
+Jin, Y., Kim, J., T. {\&} Chamorro, L., P.(2018)
+Instability-driven frequency decoupling between structure dynamics and wake fluctuations.
+	\textit{Physical Review Fluids}, \textit{3}(4), 044701.
+
+\bibitem[Kim et al.(2010)]{kim2010constructive}
+Kim, S., Huang, W., X. {\&} Sung, H., J.(2010)
+Constructive and destructive interaction modes between two tandem flexible flags in viscous flow.
+	\textit{J Fluid Mech}, \textit{661}, 511--521.
+
+\bibitem[Lawson et al.(2012)]{lawson2012enhancement}
+Lawson, S., E., McGlathery, K., J. {\&} Wiberg, P., L.(2012)
+Enhancement of sediment suspension and nutrient flux by benthic macrophytes at low biomass.
+	\textit{Mar Ecol Prog Ser}, \textit{448}, 259--270.
+
+\bibitem[Albayrak et al.(2012)]{albayrak2012flow}
+Albayrak, I., Nikora, V., Miler, O. {\&} O’Hare, M.(2012)
+Flow-plant interactions at a leaf scale: effects of leaf shape, serration, roughness and flexural rigidity.
+	\textit{Aquat Sci}, \textit{74}(2), 267--286.
+
+\bibitem[Bae et al.(2014)]{bae2014flutter}
+Bae, J., Lee, J., Kim, S., M., Ha, J., Lee, B., S., Park, Y., J., Choong, C., Kim, J., B., Wang, Z., L., Kim, H., Y.(2014)
+Flutter-driven triboelectrification for harvesting wind energy.
+	\textit{Nat Commun}, \textit{5}, 4929.
+	
+	
+
+
+
+\end{thebibliography}
 
 
 

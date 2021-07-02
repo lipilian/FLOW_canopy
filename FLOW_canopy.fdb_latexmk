@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1625161133 "/Users/hongliu/Desktop/FLOW_canopy/FLOW_canopy.tex" "FLOW_canopy.pdf" "FLOW_canopy" 1625161135
-  "/Users/hongliu/Desktop/FLOW_canopy/FLOW_canopy.tex" 1625161085 29705 0a3e92edb5dd467a9619f8c633735e50 ""
+["pdflatex"] 1625249936 "/Users/hongliu/Desktop/FLOW_canopy/FLOW_canopy.tex" "FLOW_canopy.pdf" "FLOW_canopy" 1625249940
+  "/Users/hongliu/Desktop/FLOW_canopy/FLOW_canopy.tex" 1625249935 38341 479ed43284a40bbdb80a4651894c3614 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1604871180 2917 46ff8e5a076fa313c692bdd47456b2c6 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -183,9 +183,9 @@
   "6hz_spectra.eps" 1625161085 753328 b1e75336381b3cc8740243089004be05 ""
   "9hz_spectra.eps" 1625161085 1547473 ecdb096162ae732de0266ed27078917b ""
   "Bending.jpg" 1625161085 60059 d7b0f165655bd0cf0dfb52c0b5db8471 ""
-  "FLOW_canopy.aux" 1625161135 15387 7ed5bc4004fbcf2b289f81189e8c9278 "pdflatex"
-  "FLOW_canopy.out" 1625161135 1072 1526238c772d6979d5e9123bc89af162 "pdflatex"
-  "FLOW_canopy.tex" 1625161085 29705 0a3e92edb5dd467a9619f8c633735e50 ""
+  "FLOW_canopy.aux" 1625249939 17726 dd2d3b582a0eac8c333fcd7965dccfd8 "pdflatex"
+  "FLOW_canopy.out" 1625249939 1072 1526238c772d6979d5e9123bc89af162 "pdflatex"
+  "FLOW_canopy.tex" 1625249935 38341 479ed43284a40bbdb80a4651894c3614 ""
   "FLOW_canopy.toc" 0 -1 0 ""
   "FLO_v1.cls" 1625161085 50809 19ba03372201c8e2d59d64e16c581245 ""
   "I.jpg" 1625161085 102081 4556a20a46af9f2437338d8197b63dde ""
@@ -205,7 +205,7 @@
   "uw.jpg" 1625161085 79846 f100c6f55acbf1a5b62c306b48664a7f ""
   "uw_d_ly.jpg" 1625161085 84808 02a511ab4ea8c7409f5973cabd4d3903 ""
   (generated)
-  "FLOW_canopy.out"
+  "FLOW_canopy.pdf"
   "FLOW_canopy.log"
   "FLOW_canopy.aux"
-  "FLOW_canopy.pdf"
+  "FLOW_canopy.out"

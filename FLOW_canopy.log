@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.23)  1 JUL 2021 12:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.23)  2 JUL 2021 13:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1087,47 +1087,14 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 96.
 
-Package natbib Warning: Citation `gambi1990flume' on page 1 undefined on input line 98.
-
-
-Package natbib Warning: Citation `chen2013flow' on page 1 undefined on input line 98.
-
-
-Package natbib Warning: Citation `fonseca1992preliminary' on page 1 undefined on input line 98.
-
-
-Package natbib Warning: Citation `paul2012wave' on page 1 undefined on input line 98.
-
-
-Package natbib Warning: Citation `lefebvre2010influence' on page 1 undefined on input line 98.
-
-
-Package natbib Warning: Citation `ortiz2013mean' on page 1 undefined on input line 98.
-
-
-Package natbib Warning: Citation `mcglathery2007eutrophication' on page 1 undefined on input line 98.
-
-
-Package natbib Warning: Citation `lawson2012enhancement' on page 1 undefined on input line 98.
-
-
-Package natbib Warning: Citation `mccartney1994dispersal' on page 1 undefined on input line 98.
-
-
-Package natbib Warning: Citation `bae2014flutter' on page 1 undefined on input line 98.
-
-
-Package natbib Warning: Citation `nepf2012flow' on page 1 undefined on input line 99.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 100.
+(Font)              scaled to size 7.0pt on input line 115.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 7.0pt on input line 100.
+(Font)              scaled to size 7.0pt on input line 115.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.0pt on input line 100.
+(Font)              scaled to size 7.0pt on input line 115.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
@@ -1141,180 +1108,82 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 100.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 115.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 100.
+(Font)              scaled to size 7.0pt on input line 115.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-
-Package natbib Warning: Citation `vogel1984drag' on page 2 undefined on input line 102.
-
-
-Package natbib Warning: Citation `gosselin2010drag' on page 2 undefined on input line 102.
-
-
-Package natbib Warning: Citation `luhar2011flow' on page 2 undefined on input line 102.
-
-
-Package natbib Warning: Citation `luhar2016wave' on page 2 undefined on input line 102.
-
-
-Package natbib Warning: Citation `albayrak2012flow' on page 2 undefined on input line 102.
-
-
-Package natbib Warning: Citation `jin2018flow' on page 2 undefined on input line 102.
-
-
-Package natbib Warning: Citation `naudascher2017flow' on page 2 undefined on input line 104.
-
-
-Package natbib Warning: Citation `jin2018instability' on page 2 undefined on input line 104.
-
-
-Package natbib Warning: Citation `kim2010constructive' on page 2 undefined on input line 106.
-
-
-Package natbib Warning: Citation `jin2018couple' on page 2 undefined on input line 106.
-
-
-Package natbib Warning: Citation `finnigan2000turbulence' on page 2 undefined on input line 108.
-
-
-Package natbib Warning: Citation `raupach1996coherent' on page 2 undefined on input line 108.
-
-
-Package natbib Warning: Citation `ghisalberti2002mixing' on page 2 undefined on input line 108.
-
-
-Package natbib Warning: Citation `nepf2012flow' on page 2 undefined on input line 108.
-
-
-Package natbib Warning: Citation `okamoto2013spatial' on page 2 undefined on input line 108.
-
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 108.
-
-Package natbib Warning: Citation `nepf2000flow' on page 2 undefined on input line 108.
-
-
-Package natbib Warning: Citation `ghisalberti2006structure' on page 2 undefined on input line 108.
-
-
-Package natbib Warning: Citation `ghisalberti2006structure' on page 2 undefined on input line 108.
-
-
-Package natbib Warning: Citation `okamoto2009turbulence' on page 2 undefined on input line 110.
-
-
-Package natbib Warning: Citation `okamoto2013spatial' on page 2 undefined on input line 110.
-
-
-Package natbib Warning: Citation `okamoto2009turbulence' on page 2 undefined on input line 110.
-
-
-Package natbib Warning: Citation `okamoto2016flow' on page 2 undefined on input line 110.
-
+(Font)              scaled to size 10.0pt on input line 173.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-
-Package natbib Warning: Citation `o2019dynamic' on page 3 undefined on input line 112.
-
-<fig1.jpg, id=52, 965.10562pt x 654.445pt>
+ [2
+pdfTeX warning: \pdfendlink ended up in different nesting level than \pdfstartlink
+]
+<fig1.jpg, id=149, 965.10562pt x 654.445pt>
 File: fig1.jpg Graphic file (type jpg)
 <use fig1.jpg>
-Package pdftex.def Info: fig1.jpg  used on input line 119.
+Package pdftex.def Info: fig1.jpg  used on input line 220.
 (pdftex.def)             Requested size: 327.777pt x 222.26869pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
-(Font)              scaled to size 10.0pt on input line 120.
+(Font)              scaled to size 10.0pt on input line 221.
+ [3] [4 <./fig1.jpg>]
 
-Package natbib Warning: Citation `blois2012versatile' on page 3 undefined on input line 127.
+LaTeX Warning: Reference `schematics' on page 5 undefined on input line 295.
 
-
-Package natbib Warning: Citation `bai2014refractive' on page 3 undefined on input line 127.
-
-
-Package natbib Warning: Citation `hamed2017impact' on page 3 undefined on input line 127.
-
-
-Package natbib Warning: Citation `finnigan2000turbulence' on page 3 undefined on input line 130.
-
-
-Package natbib Warning: Citation `hamed2017impact' on page 3 undefined on input line 130.
-
-
-Package natbib Warning: Citation `luhar2016wave' on page 3 undefined on input line 132.
-
-
-Package natbib Warning: Citation `poggi2004effect' on page 3 undefined on input line 132.
-
-
-Package natbib Warning: Citation `nezu2008turburence' on page 3 undefined on input line 132.
-
-
-Package natbib Warning: Citation `chen2013flow' on page 3 undefined on input line 132.
-
-[3]
-
-Package natbib Warning: Citation `kim2016three' on page 4 undefined on input line 153.
-
-
-LaTeX Warning: Reference `schematics' on page 4 undefined on input line 153.
-
-[4 <./fig1.jpg>]
-<Inst.jpg, id=66, 1221.81468pt x 286.82156pt>
+<Inst.jpg, id=196, 1221.81468pt x 286.82156pt>
 File: Inst.jpg Graphic file (type jpg)
 <use Inst.jpg>
-Package pdftex.def Info: Inst.jpg  used on input line 160.
+Package pdftex.def Info: Inst.jpg  used on input line 302.
 (pdftex.def)             Requested size: 409.71968pt x 96.18318pt.
-<Mean_U.jpg, id=67, 1064.97874pt x 523.45563pt>
+<Mean_U.jpg, id=197, 1064.97874pt x 523.45563pt>
 File: Mean_U.jpg Graphic file (type jpg)
 <use Mean_U.jpg>
-Package pdftex.def Info: Mean_U.jpg  used on input line 172.
+Package pdftex.def Info: Mean_U.jpg  used on input line 314.
 (pdftex.def)             Requested size: 409.71968pt x 201.38327pt.
- [5 <./Inst.jpg> <./Mean_U.jpg>]
-<U_V_profiles.jpg, id=77, 869.2475pt x 299.61937pt>
+[5 <./Inst.jpg>]
+<U_V_profiles.jpg, id=207, 869.2475pt x 299.61937pt>
 File: U_V_profiles.jpg Graphic file (type jpg)
 <use U_V_profiles.jpg>
-Package pdftex.def Info: U_V_profiles.jpg  used on input line 189.
+Package pdftex.def Info: U_V_profiles.jpg  used on input line 331.
 (pdftex.def)             Requested size: 409.71968pt x 141.22801pt.
-<U_V_y1.jpg, id=78, 1653.67813pt x 379.91937pt>
+<U_V_y1.jpg, id=208, 1653.67813pt x 379.91937pt>
 File: U_V_y1.jpg Graphic file (type jpg)
 <use U_V_y1.jpg>
-Package pdftex.def Info: U_V_y1.jpg  used on input line 201.
+Package pdftex.def Info: U_V_y1.jpg  used on input line 343.
 (pdftex.def)             Requested size: 409.71968pt x 94.12743pt.
-<TKE_uw.jpg, id=79, 1063.47313pt x 548.0475pt>
+<TKE_uw.jpg, id=209, 1063.47313pt x 548.0475pt>
 File: TKE_uw.jpg Graphic file (type jpg)
 <use TKE_uw.jpg>
-Package pdftex.def Info: TKE_uw.jpg  used on input line 211.
+Package pdftex.def Info: TKE_uw.jpg  used on input line 353.
 (pdftex.def)             Requested size: 409.71968pt x 211.13692pt.
-<TKE_uv_profiles.jpg, id=80, 864.73062pt x 297.11pt>
+<TKE_uv_profiles.jpg, id=210, 864.73062pt x 297.11pt>
 File: TKE_uv_profiles.jpg Graphic file (type jpg)
 <use TKE_uv_profiles.jpg>
-Package pdftex.def Info: TKE_uv_profiles.jpg  used on input line 218.
+Package pdftex.def Info: TKE_uv_profiles.jpg  used on input line 360.
 (pdftex.def)             Requested size: 409.71968pt x 140.77509pt.
-<uw.jpg, id=81, 743.77875pt x 188.705pt>
+<uw.jpg, id=211, 743.77875pt x 188.705pt>
 File: uw.jpg Graphic file (type jpg)
 <use uw.jpg>
-Package pdftex.def Info: uw.jpg  used on input line 224.
+Package pdftex.def Info: uw.jpg  used on input line 366.
 (pdftex.def)             Requested size: 409.71968pt x 103.95218pt.
-<Qd.jpg, id=82, 1423.81938pt x 354.32375pt>
+<Qd.jpg, id=212, 1423.81938pt x 354.32375pt>
 File: Qd.jpg Graphic file (type jpg)
 <use Qd.jpg>
-Package pdftex.def Info: Qd.jpg  used on input line 230.
+Package pdftex.def Info: Qd.jpg  used on input line 372.
 (pdftex.def)             Requested size: 389.23244pt x 96.85812pt.
-<uw_d_ly.jpg, id=83, 878.28125pt x 200.24812pt>
+<uw_d_ly.jpg, id=213, 878.28125pt x 200.24812pt>
 File: uw_d_ly.jpg Graphic file (type jpg)
 <use uw_d_ly.jpg>
-Package pdftex.def Info: uw_d_ly.jpg  used on input line 236.
+Package pdftex.def Info: uw_d_ly.jpg  used on input line 378.
 (pdftex.def)             Requested size: 409.71968pt x 93.4169pt.
 Package epstopdf Info: Source file: <rssmax.eps>
 (epstopdf)                    date: 2021-07-01 12:38:05
@@ -1323,12 +1192,12 @@ Package epstopdf Info: Source file: <rssmax.eps>
 (epstopdf)                    date: 2021-07-01 12:38:49
 (epstopdf)                    size: 50513 bytes
 (epstopdf)             Command: <repstopdf --outfile=rssmax-eps-converted-to.pdf rssmax.eps>
-(epstopdf)             \includegraphics on input line 243.
+(epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
-<rssmax-eps-converted-to.pdf, id=84, 301.125pt x 130.4875pt>
+<rssmax-eps-converted-to.pdf, id=214, 301.125pt x 130.4875pt>
 File: rssmax-eps-converted-to.pdf Graphic file (type pdf)
 <use rssmax-eps-converted-to.pdf>
-Package pdftex.def Info: rssmax-eps-converted-to.pdf  used on input line 243.
+Package pdftex.def Info: rssmax-eps-converted-to.pdf  used on input line 385.
 (pdftex.def)             Requested size: 200.7649pt x 87.00206pt.
 Package epstopdf Info: Source file: <thickness.eps>
 (epstopdf)                    date: 2021-07-01 12:38:05
@@ -1337,12 +1206,12 @@ Package epstopdf Info: Source file: <thickness.eps>
 (epstopdf)                    date: 2021-07-01 12:38:49
 (epstopdf)                    size: 29481 bytes
 (epstopdf)             Command: <repstopdf --outfile=thickness-eps-converted-to.pdf thickness.eps>
-(epstopdf)             \includegraphics on input line 244.
+(epstopdf)             \includegraphics on input line 386.
 Package epstopdf Info: Output file is already uptodate.
-<thickness-eps-converted-to.pdf, id=85, 301.125pt x 130.4875pt>
+<thickness-eps-converted-to.pdf, id=215, 301.125pt x 130.4875pt>
 File: thickness-eps-converted-to.pdf Graphic file (type pdf)
 <use thickness-eps-converted-to.pdf>
-Package pdftex.def Info: thickness-eps-converted-to.pdf  used on input line 244.
+Package pdftex.def Info: thickness-eps-converted-to.pdf  used on input line 386.
 (pdftex.def)             Requested size: 200.7649pt x 87.00206pt.
 Package epstopdf Info: Source file: <MixingLength.eps>
 (epstopdf)                    date: 2021-07-01 12:38:05
@@ -1351,31 +1220,31 @@ Package epstopdf Info: Source file: <MixingLength.eps>
 (epstopdf)                    date: 2021-07-01 12:38:50
 (epstopdf)                    size: 117138 bytes
 (epstopdf)             Command: <repstopdf --outfile=MixingLength-eps-converted-to.pdf MixingLength.eps>
-(epstopdf)             \includegraphics on input line 252.
+(epstopdf)             \includegraphics on input line 394.
 Package epstopdf Info: Output file is already uptodate.
-<MixingLength-eps-converted-to.pdf, id=86, 399.4925pt x 281.05pt>
+<MixingLength-eps-converted-to.pdf, id=216, 399.4925pt x 281.05pt>
 File: MixingLength-eps-converted-to.pdf Graphic file (type pdf)
 <use MixingLength-eps-converted-to.pdf>
-Package pdftex.def Info: MixingLength-eps-converted-to.pdf  used on input line 252.
+Package pdftex.def Info: MixingLength-eps-converted-to.pdf  used on input line 394.
 (pdftex.def)             Requested size: 327.777pt x 230.60829pt.
-<Bending.jpg, id=87, 884.80562pt x 220.32312pt>
+<Bending.jpg, id=217, 884.80562pt x 220.32312pt>
 File: Bending.jpg Graphic file (type jpg)
 <use Bending.jpg>
-Package pdftex.def Info: Bending.jpg  used on input line 261.
+Package pdftex.def Info: Bending.jpg  used on input line 403.
 (pdftex.def)             Requested size: 409.71968pt x 102.02559pt.
- [6 <./U_V_profiles.jpg> <./U_V_y1.jpg>] [7 <./TKE_uw.jpg> <./TKE_uv_profiles.jpg> <./uw.jpg>]
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 271.
+               Default added (so using `tbp') on input line 413.
 
-<I.jpg, id=106, 1327.96124pt x 323.2075pt>
+<I.jpg, id=222, 1327.96124pt x 323.2075pt>
 File: I.jpg Graphic file (type jpg)
 <use I.jpg>
-Package pdftex.def Info: I.jpg  used on input line 272.
+Package pdftex.def Info: I.jpg  used on input line 414.
 (pdftex.def)             Requested size: 409.71968pt x 99.71983pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 277.
+               Default added (so using `tbp') on input line 419.
 
 Package epstopdf Info: Source file: <6hz_spectra.eps>
 (epstopdf)                    date: 2021-07-01 12:38:05
@@ -1384,12 +1253,12 @@ Package epstopdf Info: Source file: <6hz_spectra.eps>
 (epstopdf)                    date: 2021-07-01 12:38:51
 (epstopdf)                    size: 199407 bytes
 (epstopdf)             Command: <repstopdf --outfile=6hz_spectra-eps-converted-to.pdf 6hz_spectra.eps>
-(epstopdf)             \includegraphics on input line 279.
+(epstopdf)             \includegraphics on input line 421.
 Package epstopdf Info: Output file is already uptodate.
-<6hz_spectra-eps-converted-to.pdf, id=111, 828.09375pt x 452.69125pt>
+<6hz_spectra-eps-converted-to.pdf, id=227, 828.09375pt x 452.69125pt>
 File: 6hz_spectra-eps-converted-to.pdf Graphic file (type pdf)
 <use 6hz_spectra-eps-converted-to.pdf>
-Package pdftex.def Info: 6hz_spectra-eps-converted-to.pdf  used on input line 279.
+Package pdftex.def Info: 6hz_spectra-eps-converted-to.pdf  used on input line 421.
 (pdftex.def)             Requested size: 327.777pt x 179.18753pt.
 Package epstopdf Info: Source file: <9hz_spectra.eps>
 (epstopdf)                    date: 2021-07-01 12:38:05
@@ -1398,12 +1267,12 @@ Package epstopdf Info: Source file: <9hz_spectra.eps>
 (epstopdf)                    date: 2021-07-01 12:38:51
 (epstopdf)                    size: 404545 bytes
 (epstopdf)             Command: <repstopdf --outfile=9hz_spectra-eps-converted-to.pdf 9hz_spectra.eps>
-(epstopdf)             \includegraphics on input line 280.
+(epstopdf)             \includegraphics on input line 422.
 Package epstopdf Info: Output file is already uptodate.
-<9hz_spectra-eps-converted-to.pdf, id=112, 828.09375pt x 452.69125pt>
+<9hz_spectra-eps-converted-to.pdf, id=228, 828.09375pt x 452.69125pt>
 File: 9hz_spectra-eps-converted-to.pdf Graphic file (type pdf)
 <use 9hz_spectra-eps-converted-to.pdf>
-Package pdftex.def Info: 9hz_spectra-eps-converted-to.pdf  used on input line 280.
+Package pdftex.def Info: 9hz_spectra-eps-converted-to.pdf  used on input line 422.
 (pdftex.def)             Requested size: 327.777pt x 179.18753pt.
 Package epstopdf Info: Source file: <12hz_spectra.eps>
 (epstopdf)                    date: 2021-07-01 12:38:05
@@ -1412,16 +1281,16 @@ Package epstopdf Info: Source file: <12hz_spectra.eps>
 (epstopdf)                    date: 2021-07-01 12:38:52
 (epstopdf)                    size: 609549 bytes
 (epstopdf)             Command: <repstopdf --outfile=12hz_spectra-eps-converted-to.pdf 12hz_spectra.eps>
-(epstopdf)             \includegraphics on input line 281.
+(epstopdf)             \includegraphics on input line 423.
 Package epstopdf Info: Output file is already uptodate.
-<12hz_spectra-eps-converted-to.pdf, id=113, 828.09375pt x 452.69125pt>
+<12hz_spectra-eps-converted-to.pdf, id=229, 828.09375pt x 452.69125pt>
 File: 12hz_spectra-eps-converted-to.pdf Graphic file (type pdf)
 <use 12hz_spectra-eps-converted-to.pdf>
-Package pdftex.def Info: 12hz_spectra-eps-converted-to.pdf  used on input line 281.
+Package pdftex.def Info: 12hz_spectra-eps-converted-to.pdf  used on input line 423.
 (pdftex.def)             Requested size: 327.777pt x 179.18753pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 287.
+               Default added (so using `tbp') on input line 429.
 
 Package epstopdf Info: Source file: <spec_piv.eps>
 (epstopdf)                    date: 2021-07-01 12:38:05
@@ -1430,16 +1299,16 @@ Package epstopdf Info: Source file: <spec_piv.eps>
 (epstopdf)                    date: 2021-07-01 12:38:52
 (epstopdf)                    size: 382236 bytes
 (epstopdf)             Command: <repstopdf --outfile=spec_piv-eps-converted-to.pdf spec_piv.eps>
-(epstopdf)             \includegraphics on input line 288.
+(epstopdf)             \includegraphics on input line 430.
 Package epstopdf Info: Output file is already uptodate.
-<spec_piv-eps-converted-to.pdf, id=114, 1505.625pt x 553.06625pt>
+<spec_piv-eps-converted-to.pdf, id=230, 1505.625pt x 553.06625pt>
 File: spec_piv-eps-converted-to.pdf Graphic file (type pdf)
 <use spec_piv-eps-converted-to.pdf>
-Package pdftex.def Info: spec_piv-eps-converted-to.pdf  used on input line 288.
+Package pdftex.def Info: spec_piv-eps-converted-to.pdf  used on input line 430.
 (pdftex.def)             Requested size: 409.71968pt x 150.50291pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 293.
+               Default added (so using `tbp') on input line 435.
 
 Package epstopdf Info: Source file: <auto.eps>
 (epstopdf)                    date: 2021-07-01 12:38:05
@@ -1448,17 +1317,19 @@ Package epstopdf Info: Source file: <auto.eps>
 (epstopdf)                    date: 2021-07-01 12:38:53
 (epstopdf)                    size: 60108 bytes
 (epstopdf)             Command: <repstopdf --outfile=auto-eps-converted-to.pdf auto.eps>
-(epstopdf)             \includegraphics on input line 294.
+(epstopdf)             \includegraphics on input line 436.
 Package epstopdf Info: Output file is already uptodate.
-<auto-eps-converted-to.pdf, id=115, 542.025pt x 166.6225pt>
+<auto-eps-converted-to.pdf, id=231, 542.025pt x 166.6225pt>
 File: auto-eps-converted-to.pdf Graphic file (type pdf)
 <use auto-eps-converted-to.pdf>
-Package pdftex.def Info: auto-eps-converted-to.pdf  used on input line 294.
+Package pdftex.def Info: auto-eps-converted-to.pdf  used on input line 436.
 (pdftex.def)             Requested size: 286.80252pt x 88.16711pt.
+[6 <./Mean_U.jpg>] [7 <./U_V_profiles.jpg> <./U_V_y1.jpg> <./TKE_uw.jpg>] [8 <./TKE_uv_profiles.jpg> <./uw.jpg> <./Qd.jpg> <./uw_d_ly.jpg>] [9 <./rssmax-eps-converted-to.pdf> <./thickness-eps-converted-to.pdf> <./MixingLength-eps-converted-to.pdf> <./Bending.jpg>] [10 <./I.jpg>] [11 <./6hz_spectra-eps-converted-to.pdf> <./9hz_spectra-eps-converted-to.pdf> <./12hz_spectra-eps-converted-to.pdf>] [12 <./spec_piv-eps-converted-to.pdf> <./auto-eps-converted-to.pdf>]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 8.0pt on input line 496.
+ [13
 
-Package natbib Warning: There were undefined citations.
-
-[8 <./Qd.jpg> <./uw_d_ly.jpg> <./rssmax-eps-converted-to.pdf> <./thickness-eps-converted-to.pdf>] [9 <./MixingLength-eps-converted-to.pdf> <./Bending.jpg> <./I.jpg>] [10 <./6hz_spectra-eps-converted-to.pdf> <./9hz_spectra-eps-converted-to.pdf> <./12hz_spectra-eps-converted-to.pdf>] [11 <./spec_piv-eps-converted-to.pdf> <./auto-eps-converted-to.pdf>] (./FLOW_canopy.aux)
+] [14] (./FLOW_canopy.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1473,18 +1344,18 @@ Package rerunfilecheck Info: File `FLOW_canopy.out' has not changed.
 (rerunfilecheck)             Checksum: 1526238C772D6979D5E9123BC89AF162;1072.
  ) 
 Here is how much of TeX's memory you used:
- 16024 strings out of 478510
- 224071 string characters out of 5849579
- 571635 words of memory out of 5000000
- 33614 multiletter control sequences out of 15000+600000
- 484818 words of font info for 142 fonts, out of 8000000 for 9000
+ 16173 strings out of 478510
+ 227562 string characters out of 5849579
+ 576411 words of memory out of 5000000
+ 33723 multiletter control sequences out of 15000+600000
+ 487607 words of font info for 143 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 72i,16n,80p,1599b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,16n,80p,1594b,582s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on FLOW_canopy.pdf (11 pages, 4065052 bytes).
+Output written on FLOW_canopy.pdf (14 pages, 4080065 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
+ 449 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1169,9 +1169,6 @@ INPUT ./Bending.jpg
 INPUT Bending.jpg
 INPUT ./Bending.jpg
 INPUT ./Bending.jpg
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/public/newtx/ntxsym.vf
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
 INPUT ./I.jpg
 INPUT I.jpg
 INPUT ./I.jpg
@@ -1226,10 +1223,14 @@ INPUT ./auto.eps
 INPUT ./auto-eps-converted-to.pdf
 INPUT ./auto-eps-converted-to.pdf
 INPUT ./auto-eps-converted-to.pdf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/public/newtx/ntxsym.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/public/newtx/ntxexx.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/newtx/txexs.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/public/newtx/ntxsyc.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
 INPUT FLOW_canopy.aux
 INPUT ./FLOW_canopy.out
 INPUT ./FLOW_canopy.out

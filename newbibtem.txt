@@ -1,0 +1,180 @@
+\bibitem[Jin et al.(2018)]{jin2018flow}
+Jin, Y., Kim, J., T., Hong, L. {\&} Chamorro, L., P.(2018)
+Flow-induced oscillations of low-aspect-ratio flexible plates with various tip geometries.
+ \textit{Phys Fluids}, \textit{30}(9), 097102.
+
+\bibitem[Okamoto et al.(2016)]{okamoto2016flow}
+Okamoto, T., Nezu, I. {\&} Sanjou, M.(2016)
+Flow--vegetation interactions: length-scale of the “monami” phenomenon.
+ \textit{J Hydraul Eng}, \textit{54}(3), 251--262.
+
+\bibitem[Hamed et al.(2017)]{hamed2017impact}
+Hamed, A., M., Sadowski, M., J., Nepf, H., M. {\&} Chamorro, L., P.(2017)
+Impact of height heterogeneity on canopy turbulence.
+ \textit{J Fluid Mech}, \textit{813}, 1176--1196.
+
+\bibitem[Nepf, H., M.(2012)]{nepf2012flow}
+Nepf, H., M.(2012)
+Flow and transport in regions with aquatic vegetation.
+ \textit{Annu Rev Fluid Mech}, \textit{44}, 123--142.
+
+\bibitem[Raupach et al.(1996)]{raupach1996coherent}
+Raupach, M., R., Finnigan, J., J. {\&} Brunet, Y.(1996)
+Coherent eddies and turbulence in vegetation canopies: the mixing-layer analogy.
+ \textit{Boundary-Layer Meteorology 25th Anniversary Volume, 1970--1995}, 351--382.
+
+\bibitem[Nezu, I. {\&} Sanjou, M.(2008)]{nezu2008turburence}
+Nezu, I. {\&} Sanjou, M.(2008)
+Turburence structure and coherent motion in vegetated canopy open-channel flows.
+ \textit{J Hydro-environ Res}, \textit{2}(2), 62--90.
+
+\bibitem[Ghisalberti, M. {\&} Nepf, H., M.(2002)]{ghisalberti2002mixing}
+Ghisalberti, M. {\&} Nepf, H., M.(2002)
+Mixing layers and coherent structures in vegetated aquatic flows.
+ \textit{J Geophys Res-Oceans}, \textit{107}(C2).
+
+\bibitem[Blois et al.(2012)]{blois2012versatile}
+Blois, G., Christensen, K., Best, J., Elliott, G., Austin, J., Dutton, J., C., Bragg, M., Garcia, M. {\&} Fouke, B.(2012)
+A versatile refractive-index-matched flow facility for studies of complex flow systems across scientific disciplines.
+ \textit{50th AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition}, 736.
+
+\bibitem[Bai, K. {\&} Katz, J.(2014)]{bai2014refractive}
+Bai, K. {\&} Katz, J.(2014)
+On the refractive index of sodium iodide solutions for index matching in PIV.
+ \textit{Exp Fluids}, \textit{55}(4), 1704.
+
+\bibitem[Finnigan, J.(2000)]{finnigan2000turbulence}
+Finnigan, J.(2000)
+Turbulence in plant canopies.
+ \textit{Annu Rev Fluid Mech}, \textit{32}(1), 519--571.
+
+\bibitem[Luhar, M. {\&} Nepf, H., M.(2016)]{luhar2016wave}
+Luhar, M. {\&} Nepf, H., M.(2016)
+Wave-induced dynamics of flexible blades.
+ \textit{J Fluids Struct}, \textit{61}, 20--41.
+
+\bibitem[Chen et al.(2013)]{chen2013flow}
+Chen, Z., Jiang, C. {\&} Nepf, H.(2013)
+Flow adjustment at the leading edge of a submerged aquatic canopy.
+ \textit{Water Resour Res}, \textit{49}(9), 5537--5551.
+
+\bibitem[Poggi et al.(2004)]{poggi2004effect}
+Poggi, D., Porporato, A., Ridolfi, L., Albertson, J., D. {\&} Katul, G., G.(2004)
+The effect of vegetation density on canopy sub-layer turbulence.
+ \textit{Boundary Layer Meteorol}, \textit{111}(3), 565--587.
+
+\bibitem[Kim et al.(2016)]{kim2016three}
+Kim, J., T., Kim, D., Liberzon, A. {\&} Chamorro, L., P.(2016)
+Three-dimensional particle tracking velocimetry for turbulence applications: Case of a jet flow.
+ \textit{Jove-J Vis Exp}.
+
+\bibitem[Ghisalberti, M. {\&} Nepf, H.(2006)]{ghisalberti2006structure}
+Ghisalberti, M. {\&} Nepf, H.(2006)
+The structure of the shear layer in flows over rigid and flexible canopies.
+ \textit{Environ Fluid Mech}, \textit{6}(3), 277--301.
+
+\bibitem[Nepf, H., M. {\&} Vivoni, E., R.(2000)]{nepf2000flow}
+Nepf, H., M. {\&} Vivoni, E., R.(2000)
+Flow structure in depth-limited, vegetated flow.
+ \textit{J Geophys Res-Oceans}, \textit{105}(C12), 28547--28557.
+
+\bibitem[Jin et al.(2018)]{jin2018couple}
+Jin, Y., Kim, J., T., Mao, Z. {\&} Chamorro, L., P.(2018)
+On the couple dynamics of wall-mounted flexible plates in tandem.
+ \textit{J Fluid Mech}, \textit{852}.
+
+\bibitem[Okamoto, T., A. {\&} Nezu, I.(2009)]{okamoto2009turbulence}
+Okamoto, T., A. {\&} Nezu, I.(2009)
+Turbulence structure and “Monami” phenomena in flexible vegetated open-channel flows.
+ \textit{J Hydraulic Res}, \textit{47}(6), 798--810.
+
+\bibitem[Okamoto, T. {\&} Nezu, I.(2013)]{okamoto2013spatial}
+Okamoto, T. {\&} Nezu, I.(2013)
+Spatial evolution of coherent motions in finite-length vegetation patch flow.
+ \textit{Environ Fluid Mech}, \textit{13}(5), 417--434.
+
+\bibitem[Ortiz et al.(2013)]{ortiz2013mean}
+Ortiz, A., C., Ashton, A. {\&} Nepf, H.(2013)
+Mean and turbulent velocity fields near rigid and flexible plants and the implications for deposition.
+ \textit{J Geophys Res-Earth}, \textit{118}(4), 2585--2599.
+
+\bibitem[Paul et al.(2012)]{paul2012wave}
+Paul, M., Bouma, T., J. {\&} Amos, C., L.(2012)
+Wave attenuation by submerged vegetation: combining the effect of organism traits and tidal current.
+ \textit{Mar Ecol Prog Ser}, \textit{444}, 31--41.
+
+\bibitem[Vogel, S.(1984)]{vogel1984drag}
+Vogel, S.(1984)
+Drag and flexibility in sessile organisms.
+ \textit{Am Zool}, \textit{24}(1), 37--44.
+
+\bibitem[Lefebvre et al.(2010)]{lefebvre2010influence}
+Lefebvre, A., Thompson, C., E., L. {\&} Amos, C., L.(2010)
+Influence of Zostera marina canopies on unidirectional flow, hydraulic roughness and sediment movement.
+ \textit{Cont Shelf Res}, \textit{30}(16), 1783--1794.
+
+\bibitem[Luhar, M. {\&} Nepf, H., M.(2011)]{luhar2011flow}
+Luhar, M. {\&} Nepf, H., M.(2011)
+Flow-induced reconfiguration of buoyant and flexible aquatic vegetation.
+ \textit{Limnol Oceanogr}, \textit{56}(6), 2003--2017.
+
+\bibitem[McCartney, H., A.(1994)]{mccartney1994dispersal}
+McCartney, H., A.(1994)
+Dispersal of spores and pollen from crops.
+ \textit{Grana}, \textit{33}(2), 76--80.
+
+\bibitem[McGlathery et al.(2007)]{mcglathery2007eutrophication}
+McGlathery, K., J., Sundb{\"a}ck, K. {\&} Anderson, I., C.(2007)
+Eutrophication in shallow coastal bays and lagoons: the role of plants in the coastal filter.
+ \textit{Mar Ecol Prog Ser}, \textit{348}, 1--18.
+
+\bibitem[Naudascher, E.(2017)]{naudascher2017flow}
+Naudascher, E.(2017)
+Flow-induced Vibrations: an Engineering Guide: IAHR Hydraulic Structures Design Manuals 7.
+ \textit{Routledge}.
+
+\bibitem[O’Connor, J. {\&} Revell, A.(2019)]{o2019dynamic}
+O’Connor, J. {\&} Revell, A.(2019)
+Dynamic interactions of multiple wall-mounted flexible flaps.
+ \textit{J Fluid Mech}, \textit{870}, 189--216.
+
+\bibitem[Fonseca, M., S. {\&} Cahalan, J., A.(1992)]{fonseca1992preliminary}
+Fonseca, M., S. {\&} Cahalan, J., A.(1992)
+A preliminary evaluation of wave attenuation by four species of seagrass.
+ \textit{Estuarine Coastal Shelf Sci}, \textit{35}(6), 565--576.
+
+\bibitem[Gambi et al.(1990)]{gambi1990flume}
+Gambi, M., C., Nowell, A., R., M. {\&} Jumars, P., A.(1990)
+Flume observations on flow dynamics in Zostera marina(eelgrass) beds..
+ \textit{Marine ecology progress series. Oldendorf}, \textit{61}(1), 159--169.
+
+\bibitem[Gosselin et al.(2010)]{gosselin2010drag}
+Gosselin, F., De Langre, E. {\&} Machado-Almeida, B., A.(2010)
+Drag reduction of flexible plates by reconfiguration.
+ \textit{J Fluid Mech}, \textit{650}, 319--341.
+
+\bibitem[Jin et al.(2018)]{jin2018instability}
+Jin, Y., Kim, J., T. {\&} Chamorro, L., P.(2018)
+Instability-driven frequency decoupling between structure dynamics and wake fluctuations.
+ \textit{Physical Review Fluids}, \textit{3}(4), 044701.
+
+\bibitem[Kim et al.(2010)]{kim2010constructive}
+Kim, S., Huang, W., X. {\&} Sung, H., J.(2010)
+Constructive and destructive interaction modes between two tandem flexible flags in viscous flow.
+ \textit{J Fluid Mech}, \textit{661}, 511--521.
+
+\bibitem[Lawson et al.(2012)]{lawson2012enhancement}
+Lawson, S., E., McGlathery, K., J. {\&} Wiberg, P., L.(2012)
+Enhancement of sediment suspension and nutrient flux by benthic macrophytes at low biomass.
+ \textit{Mar Ecol Prog Ser}, \textit{448}, 259--270.
+
+\bibitem[Albayrak et al.(2012)]{albayrak2012flow}
+Albayrak, I., Nikora, V., Miler, O. {\&} O’Hare, M.(2012)
+Flow-plant interactions at a leaf scale: effects of leaf shape, serration, roughness and flexural rigidity.
+ \textit{Aquat Sci}, \textit{74}(2), 267--286.
+
+\bibitem[Bae et al.(2014)]{bae2014flutter}
+Bae, J., Lee, J., Kim, S., M., Ha, J., Lee, B., S., Park, Y., J., Choong, C., Kim, J., B., Wang, Z., L., Kim, H., Y.(2014)
+Flutter-driven triboelectrification for harvesting wind energy.
+ \textit{Nat Commun}, \textit{5}, 4929.
+
